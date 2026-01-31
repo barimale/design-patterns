@@ -1,0 +1,11 @@
+R:\VisitatorAndOthers\ProxyProperties\bin\Debug\net10.0\ProxyProperties.deps.json
+R:\VisitatorAndOthers\ProxyProperties\bin\Debug\net10.0\ProxyProperties.dll
+R:\VisitatorAndOthers\ProxyProperties\bin\Debug\net10.0\ProxyProperties.pdb
+R:\VisitatorAndOthers\ProxyProperties\obj\Debug\net10.0\ProxyProperties.GeneratedMSBuildEditorConfig.editorconfig
+R:\VisitatorAndOthers\ProxyProperties\obj\Debug\net10.0\ProxyProperties.AssemblyInfoInputs.cache
+R:\VisitatorAndOthers\ProxyProperties\obj\Debug\net10.0\ProxyProperties.AssemblyInfo.cs
+R:\VisitatorAndOthers\ProxyProperties\obj\Debug\net10.0\ProxyProperties.csproj.CoreCompileInputs.cache
+R:\VisitatorAndOthers\ProxyProperties\obj\Debug\net10.0\ProxyProperties.dll
+R:\VisitatorAndOthers\ProxyProperties\obj\Debug\net10.0\refint\ProxyProperties.dll
+R:\VisitatorAndOthers\ProxyProperties\obj\Debug\net10.0\ProxyProperties.pdb
+R:\VisitatorAndOthers\ProxyProperties\obj\Debug\net10.0\ref\ProxyProperties.dll

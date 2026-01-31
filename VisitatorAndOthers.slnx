@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="NeuronApp/NeuronApp.csproj" Id="22121ceb-3f9b-474b-8841-8529909dc43f" />
+  <Project Path="ProxyProperties/ProxyProperties.csproj" Id="5c0054f0-67bf-43bb-b4b4-99990acaab33" />
+  <Project Path="VisitatorAndOthers/VisitatorAndOthers.csproj" />
+</Solution>
