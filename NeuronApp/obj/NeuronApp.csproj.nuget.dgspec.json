@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "R:\\VisitatorAndOthers\\NeuronApp\\NeuronApp.csproj": {}
+    "R:\\Wzorce-projektowe-przykladowe\\NeuronApp\\NeuronApp.csproj": {}
   },
   "projects": {
-    "R:\\VisitatorAndOthers\\NeuronApp\\NeuronApp.csproj": {
+    "R:\\Wzorce-projektowe-przykladowe\\NeuronApp\\NeuronApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "R:\\VisitatorAndOthers\\NeuronApp\\NeuronApp.csproj",
+        "projectUniqueName": "R:\\Wzorce-projektowe-przykladowe\\NeuronApp\\NeuronApp.csproj",
         "projectName": "NeuronApp",
-        "projectPath": "R:\\VisitatorAndOthers\\NeuronApp\\NeuronApp.csproj",
+        "projectPath": "R:\\Wzorce-projektowe-przykladowe\\NeuronApp\\NeuronApp.csproj",
         "packagesPath": "C:\\Users\\Dom\\.nuget\\packages\\",
-        "outputPath": "R:\\VisitatorAndOthers\\NeuronApp\\obj\\",
+        "outputPath": "R:\\Wzorce-projektowe-przykladowe\\NeuronApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "R:\\VisitatorAndOthers\\ProxyProperties\\ProxyProperties.csproj": {
-                "projectPath": "R:\\VisitatorAndOthers\\ProxyProperties\\ProxyProperties.csproj"
+              "R:\\Wzorce-projektowe-przykladowe\\ProxyProperties\\ProxyProperties.csproj": {
+                "projectPath": "R:\\Wzorce-projektowe-przykladowe\\ProxyProperties\\ProxyProperties.csproj"
               },
-              "R:\\VisitatorAndOthers\\VisitatorAndOthers\\VisitatorAndOthers.csproj": {
-                "projectPath": "R:\\VisitatorAndOthers\\VisitatorAndOthers\\VisitatorAndOthers.csproj"
+              "R:\\Wzorce-projektowe-przykladowe\\VisitatorAndOthers\\VisitatorAndOthers.csproj": {
+                "projectPath": "R:\\Wzorce-projektowe-przykladowe\\VisitatorAndOthers\\VisitatorAndOthers.csproj"
               }
             }
           }
@@ -350,14 +350,14 @@
         }
       }
     },
-    "R:\\VisitatorAndOthers\\ProxyProperties\\ProxyProperties.csproj": {
+    "R:\\Wzorce-projektowe-przykladowe\\ProxyProperties\\ProxyProperties.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "R:\\VisitatorAndOthers\\ProxyProperties\\ProxyProperties.csproj",
+        "projectUniqueName": "R:\\Wzorce-projektowe-przykladowe\\ProxyProperties\\ProxyProperties.csproj",
         "projectName": "ProxyProperties",
-        "projectPath": "R:\\VisitatorAndOthers\\ProxyProperties\\ProxyProperties.csproj",
+        "projectPath": "R:\\Wzorce-projektowe-przykladowe\\ProxyProperties\\ProxyProperties.csproj",
         "packagesPath": "C:\\Users\\Dom\\.nuget\\packages\\",
-        "outputPath": "R:\\VisitatorAndOthers\\ProxyProperties\\obj\\",
+        "outputPath": "R:\\Wzorce-projektowe-przykladowe\\ProxyProperties\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -689,14 +689,14 @@
         }
       }
     },
-    "R:\\VisitatorAndOthers\\VisitatorAndOthers\\VisitatorAndOthers.csproj": {
+    "R:\\Wzorce-projektowe-przykladowe\\VisitatorAndOthers\\VisitatorAndOthers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "R:\\VisitatorAndOthers\\VisitatorAndOthers\\VisitatorAndOthers.csproj",
+        "projectUniqueName": "R:\\Wzorce-projektowe-przykladowe\\VisitatorAndOthers\\VisitatorAndOthers.csproj",
         "projectName": "VisitatorAndOthers",
-        "projectPath": "R:\\VisitatorAndOthers\\VisitatorAndOthers\\VisitatorAndOthers.csproj",
+        "projectPath": "R:\\Wzorce-projektowe-przykladowe\\VisitatorAndOthers\\VisitatorAndOthers.csproj",
         "packagesPath": "C:\\Users\\Dom\\.nuget\\packages\\",
-        "outputPath": "R:\\VisitatorAndOthers\\VisitatorAndOthers\\obj\\",
+        "outputPath": "R:\\Wzorce-projektowe-przykladowe\\VisitatorAndOthers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

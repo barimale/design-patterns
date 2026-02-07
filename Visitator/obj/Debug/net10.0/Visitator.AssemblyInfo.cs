@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Visitator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9deca4c6aa129214eacf6d46b090a7007be0eff")]
 [assembly: System.Reflection.AssemblyProductAttribute("Visitator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Visitator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

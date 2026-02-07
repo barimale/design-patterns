@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "R:\\VisitatorAndOthers\\ProxyProperties\\ProxyProperties.csproj",
+      "projectUniqueName": "R:\\Wzorce-projektowe-przykladowe\\ProxyProperties\\ProxyProperties.csproj",
       "projectName": "ProxyProperties",
-      "projectPath": "R:\\VisitatorAndOthers\\ProxyProperties\\ProxyProperties.csproj",
+      "projectPath": "R:\\Wzorce-projektowe-przykladowe\\ProxyProperties\\ProxyProperties.csproj",
       "packagesPath": "C:\\Users\\Dom\\.nuget\\packages\\",
-      "outputPath": "R:\\VisitatorAndOthers\\ProxyProperties\\obj\\",
+      "outputPath": "R:\\Wzorce-projektowe-przykladowe\\ProxyProperties\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
