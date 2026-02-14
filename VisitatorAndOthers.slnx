@@ -4,6 +4,7 @@
   </Folder>
   <Project Path="EventVisitator/EventVisitator.csproj" Id="685c8f96-b2bd-4e76-885a-2d844bb562b6" />
   <Project Path="NeuronApp/NeuronAndVisitatorApp.csproj" Id="22121ceb-3f9b-474b-8841-8529909dc43f" />
+  <Project Path="Prototype/Prototype.csproj" Id="fa423196-f8c6-49f7-83f3-8bb52400c7cb" />
   <Project Path="ProxyProperties/ProxyProperties.csproj" Id="5c0054f0-67bf-43bb-b4b4-99990acaab33" />
   <Project Path="Visitator/Visitator.csproj" />
   <Project Path="VisitatorAndOthers/Neurons.csproj" />

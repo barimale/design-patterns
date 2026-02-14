@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EventVisitator\EventVisitator.csproj" />
+    <ProjectReference Include="..\Prototype\Prototype.csproj" />
     <ProjectReference Include="..\ProxyProperties\ProxyProperties.csproj" />
     <ProjectReference Include="..\VisitatorAndOthers\Neurons.csproj" />
     <ProjectReference Include="..\Visitator\Visitator.csproj" />

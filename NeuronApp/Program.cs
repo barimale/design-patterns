@@ -1,7 +1,10 @@
 ﻿using EventVisitator;
 using EventVisitator.Events;
 using EventVisitator.Services;
+using Prototype;
 using ProxyProperties;
+using System.Collections;
+using System.Text.Json;
 using Visitator;
 using Visitator.Elements;
 using Visitator.Visitators;
@@ -52,6 +55,32 @@ namespace NeuronApp
 
             processor.Process(ev1);
             processor.Process(ev2);
+
+            // ----------------------------------
+
+            var hero = new Character
+            {
+                Name = "Arthas",
+                Stats = new Stats { Strength = 10, Agility = 5, Intelligence = 3 },
+                Inventory = new List<Item>
+                {
+                    new Item { Name = "Sword", Power = 15 },
+                    new Item { Name = "Shield", Power = 8 }
+                },
+                Skills = new List<string> { "Slash", "Block" }
+            };
+
+            var clone = (Character)hero.Clone();
+            clone.Name = "Dark Arthas";
+            clone.Stats.Strength = 20;
+            clone.Inventory[0].Power = 999;
+            clone.Skills.Add("Dark Slash");
+
+            Console.WriteLine("hero: ");
+            Console.WriteLine(JsonSerializer.Serialize(hero));
+
+            Console.WriteLine("clone: ");
+            Console.WriteLine(JsonSerializer.Serialize(clone));
 
             Console.ReadLine();
         }
