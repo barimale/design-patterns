@@ -1,4 +1,9 @@
 ﻿using ProxyProperties;
+using System.Reflection.PortableExecutable;
+using System.Xml.Linq;
+using Visitator;
+using Visitator.Elements;
+using Visitator.Visitators;
 using VisitatorAndOthers;
 
 namespace NeuronApp
@@ -21,6 +26,23 @@ namespace NeuronApp
             // ----------------------------------
             var creature = new Creature();
             creature.Agility = 12;
+
+
+            List<IElement> document = new List<IElement> 
+            { 
+                new Header("Witaj w Visitor Pattern"),
+                new Paragraph("To jest przykładowy paragraf."), 
+                new Paragraph("Visitor pozwala dodawać operacje bez modyfikacji klas.") 
+            };
+            
+            IVisitor renderer = new HtmlRenderer(); 
+            
+            foreach (var element in document) 
+            { 
+                element.Accept(renderer); 
+            }
+
+            Console.ReadLine();
         }
     }
 }
