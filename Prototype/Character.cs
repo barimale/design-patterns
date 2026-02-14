@@ -2,6 +2,21 @@
 {
     public class Character : ICloneable
     {
+        public Character()
+        {
+            // intentionally left blank
+        }
+
+        public Character(Character hero) // konsktruktor gleboko kopiujacy 
+        {
+            var clone = (Character)hero.Clone();
+
+            Name = clone.Name;
+            Stats = clone.Stats;
+            Inventory = clone.Inventory;
+            Skills = clone.Skills;
+        }
+
         public string Name { get; set; }
         public Stats Stats { get; set; }
         public List<Item> Inventory { get; set; }

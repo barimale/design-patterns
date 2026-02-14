@@ -70,7 +70,7 @@ namespace NeuronApp
                 Skills = new List<string> { "Slash", "Block" }
             };
 
-            var clone = (Character)hero.Clone();
+            var clone = new Character(hero); // Using copy constructor for deep cloning
             clone.Name = "Dark Arthas";
             clone.Stats.Strength = 20;
             clone.Inventory[0].Power = 999;
