@@ -6,12 +6,12 @@ namespace NeuronApp
     {
         public void SendEmail(string to, string subject, string body)
         {
-            throw new NotImplementedException();
+            //intentionally left blank
         }
 
         public void SendSms(string phone, string message)
         {
-            throw new NotImplementedException();
+            //intentionally left blank
         }
     }
 }
