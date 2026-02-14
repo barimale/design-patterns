@@ -1,12 +1,12 @@
 ﻿namespace Prototype
 {
-    public class Stats
+    public class Stats: ICloneable
     {
         public int Strength { get; set; }
         public int Agility { get; set; }
         public int Intelligence { get; set; }
 
-        public Stats Clone()
+        public object Clone()
         {
             return new Stats
             {

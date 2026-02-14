@@ -12,9 +12,9 @@
             return new Character
             {
                 Name = this.Name,
-                Stats = this.Stats.Clone(),
+                Stats = (Stats)this.Stats.Clone(),
                 Inventory = this.Inventory
-                    .Select(i => i.Clone())
+                    .Select(i => (Item)i.Clone())
                     .ToList(),
                 Skills = new List<string>(this.Skills)
             };

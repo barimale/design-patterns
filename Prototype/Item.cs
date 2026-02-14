@@ -4,12 +4,12 @@ using System.Text;
 
 namespace Prototype
 {
-    public class Item
+    public class Item: ICloneable
     {
         public string Name { get; set; }
         public int Power { get; set; }
 
-        public Item Clone()
+        public object Clone()
         {
             return new Item
             {
