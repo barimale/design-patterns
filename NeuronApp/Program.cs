@@ -1,6 +1,7 @@
-﻿using ProxyProperties;
-using System.Reflection.PortableExecutable;
-using System.Xml.Linq;
+﻿using EventVisitator;
+using EventVisitator.Events;
+using EventVisitator.Services;
+using ProxyProperties;
 using Visitator;
 using Visitator.Elements;
 using Visitator.Visitators;
@@ -41,6 +42,16 @@ namespace NeuronApp
             {
                 service.Accept(notifier); 
             }
+
+            var sender = new SmtpNotificationSender();
+            var notifier2 = new NotifierService(sender);
+            var processor = new EventProcessor(notifier2);
+
+            IEvent ev1 = new UserRegisteredEvent("user@test.com", "Mateusz");
+            IEvent ev2 = new OrderPaidEvent(123, 199.99m);
+
+            processor.Process(ev1);
+            processor.Process(ev2);
 
             Console.ReadLine();
         }
