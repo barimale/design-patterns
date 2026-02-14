@@ -28,18 +28,18 @@ namespace NeuronApp
             creature.Agility = 12;
 
 
-            List<IElement> document = new List<IElement> 
+            List<IServiceItem> services = new List<IServiceItem> 
             { 
-                new Header("Witaj w Visitor Pattern"),
-                new Paragraph("To jest przykładowy paragraf."), 
-                new Paragraph("Visitor pozwala dodawać operacje bez modyfikacji klas.") 
+                new ServiceA("URL A"),
+                new ServiceB("URL B"), 
+                new ServiceB("URL C") 
             };
             
-            IVisitor renderer = new HtmlRenderer(); 
+            IVisitor notifier = new NotifyManager(); 
             
-            foreach (var element in document) 
-            { 
-                element.Accept(renderer); 
+            foreach (var service in services) 
+            {
+                service.Accept(notifier); 
             }
 
             Console.ReadLine();
