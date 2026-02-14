@@ -1,3 +1,3 @@
-wizytator
-proxy
-iterator
+Visitor
+Proxy
+Prototype
