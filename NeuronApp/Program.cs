@@ -2,6 +2,7 @@
 using EventVisitator.Events;
 using EventVisitator.Services;
 using Prototype;
+using PrototypeAndCollectingParameter;
 using ProxyProperties;
 using System.Collections;
 using System.Text.Json;
@@ -58,17 +59,16 @@ namespace NeuronApp
 
             // ----------------------------------
 
-            var hero = new Character
+            var hero = new Character();
+            var manager = new ManagerService();
+            manager.SetNameTo(hero, "Arthas");
+            manager.SetInventoryTo(hero, new List<Item>
             {
-                Name = "Arthas",
-                Stats = new Stats { Strength = 10, Agility = 5, Intelligence = 3 },
-                Inventory = new List<Item>
-                {
-                    new Item { Name = "Sword", Power = 15 },
-                    new Item { Name = "Shield", Power = 8 }
-                },
-                Skills = new List<string> { "Slash", "Block" }
-            };
+                new Item { Name = "Sword", Power = 15 },
+                new Item { Name = "Shield", Power = 8 }
+            });
+            manager.SetSkillsTo(hero, new List<string> { "Slash", "Block" });
+            manager.SetStatsTo(hero, new Stats { Strength = 10, Agility = 5, Intelligence = 3 });
 
             var clone = new Character(hero); // Using copy constructor for deep cloning
             clone.Name = "Dark Arthas";
