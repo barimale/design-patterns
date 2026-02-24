@@ -4,7 +4,6 @@ using EventVisitator.Services;
 using Prototype;
 using PrototypeAndCollectingParameter;
 using ProxyProperties;
-using System.Collections;
 using System.Text.Json;
 using Visitator;
 using Visitator.Elements;
