@@ -1,4 +1,4 @@
 Visitor
 Proxy
 Prototype
-Collecting parameters
+Collecting parameter
