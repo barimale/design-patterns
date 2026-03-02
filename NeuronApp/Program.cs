@@ -24,9 +24,9 @@ namespace NeuronApp
 
             neuron1.ConnectTo(neuron2);
 
-            neuron1.ConnectTo(layer1);
-            layer2.ConnectTo(neuron1);
+            neuron2.ConnectTo(layer1);
             layer1.ConnectTo(layer2);
+            //layer2.ConnectTo(neuron1);
 
             // ----------------------------------
             var creature = new Creature();
