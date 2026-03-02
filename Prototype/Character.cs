@@ -8,7 +8,7 @@
             _character = new Character();
         }
 
-        public static CharacterBuilder Create()
+        public static CharacterBuilder CreateBuilder()
         {
             return new CharacterBuilder();
         }
@@ -22,6 +22,18 @@
         public CharacterBuilder WithStats(Stats stats)
         {
             _character.Stats = stats;
+            return this;
+        }
+
+        public CharacterBuilder WithInventory(List<Item> inventory)
+        {
+            _character.Inventory = inventory;
+            return this;
+        }
+
+        public CharacterBuilder WithSkills(List<string> skills)
+        {
+            _character.Skills = skills;
             return this;
         }
 

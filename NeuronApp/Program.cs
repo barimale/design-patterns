@@ -60,9 +60,15 @@ namespace NeuronApp
             // ----------------------------------
 
             var hero = CharacterBuilder
-                .Create()
+                .CreateBuilder()
                 .WithName("name")
                 .WithStats(new Stats { Strength = 10, Agility = 5, Intelligence = 3 })
+                .WithSkills(new List<string> { "Slash", "Block" })
+                .WithInventory(new List<Item>
+                {
+                    new Item { Name = "Sword", Power = 15 },
+                    new Item { Name = "Shield", Power = 8 }
+                })
                 .Build();
 
             var manager = new ManagerService();
