@@ -1,4 +1,5 @@
 ﻿using Prototype;
+using static Prototype.CharacterBuilder;
 
 namespace PrototypeAndCollectingParameter
 {

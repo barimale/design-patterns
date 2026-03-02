@@ -1,39 +1,69 @@
 ﻿namespace Prototype
 {
-    public class Character : ICloneable
+    public class CharacterBuilder
     {
-        public Character()
+        private readonly Character _character;
+        private CharacterBuilder()
         {
-            // intentionally left blank
+            _character = new Character();
         }
 
-        public Character(Character hero) // konsktruktor gleboko kopiujacy 
+        public static CharacterBuilder Create()
         {
-            var clone = (Character)hero.Clone();
-
-            Name = clone.Name;
-            Stats = clone.Stats;
-            Inventory = clone.Inventory;
-            Skills = clone.Skills;
+            return new CharacterBuilder();
         }
 
-        public string Name { get; set; }
-        public Stats Stats { get; set; }
-        public List<Item> Inventory { get; set; }
-        public List<string> Skills { get; set; }
-
-        public object Clone()
+        public CharacterBuilder WithName(string name)
         {
-            return new Character
+            _character.Name = name;
+            return this;
+        }
+
+        public CharacterBuilder WithStats(Stats stats)
+        {
+            _character.Stats = stats;
+            return this;
+        }
+
+        public Character Build()
+        {
+            return _character;
+        }
+
+        public class Character : ICloneable
+        {
+            internal Character()
             {
-                Name = this.Name,
-                Stats = (Stats)this.Stats.Clone(),
-                Inventory = this.Inventory
-                    .Select(i => (Item)i.Clone())
-                    .ToList(),
-                Skills = new List<string>(this.Skills)
-            };
+                // intentionally left blank
+            }
+
+            public Character(Character hero) // konsktruktor gleboko kopiujacy 
+            {
+                var clone = (Character)hero.Clone();
+
+                Name = clone.Name;
+                Stats = clone.Stats;
+                Inventory = clone.Inventory;
+                Skills = clone.Skills;
+            }
+
+            public string Name { get; set; }
+            public Stats Stats { get; set; }
+            public List<Item> Inventory { get; set; }
+            public List<string> Skills { get; set; }
+
+            public object Clone()
+            {
+                return new Character
+                {
+                    Name = this.Name,
+                    Stats = (Stats)this.Stats.Clone(),
+                    Inventory = this.Inventory
+                        .Select(i => (Item)i.Clone())
+                        .ToList(),
+                    Skills = new List<string>(this.Skills)
+                };
+            }
         }
     }
-
 }

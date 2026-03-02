@@ -9,6 +9,7 @@ using Visitator;
 using Visitator.Elements;
 using Visitator.Visitators;
 using VisitatorAndOthers;
+using static Prototype.CharacterBuilder;
 
 namespace NeuronApp
 {
@@ -58,7 +59,12 @@ namespace NeuronApp
 
             // ----------------------------------
 
-            var hero = new Character();
+            var hero = CharacterBuilder
+                .Create()
+                .WithName("name")
+                .WithStats(new Stats { Strength = 10, Agility = 5, Intelligence = 3 })
+                .Build();
+
             var manager = new ManagerService();
             manager.SetNameTo(hero, "Arthas");
             manager.SetInventoryTo(hero, new List<Item>
