@@ -39,7 +39,7 @@
 
         public Character Build()
         {
-            return _character;
+            return new Character(_character);
         }
 
         public class Character : ICloneable
