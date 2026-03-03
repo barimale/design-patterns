@@ -85,11 +85,11 @@ namespace NeuronApp
             manager.SetSkillsTo(newHero, new List<string> { "Slash2", "Block21" });
             manager.SetStatsTo(newHero, new Stats { Strength = 110, Agility = 15, Intelligence = 13 });
 
-            var clone = new Character(newHero); // Using copy constructor for deep cloning
-            clone.Name = "Dark Arthas";
-            clone.Stats.Strength = 20;
-            clone.Inventory[0].Power = 999;
-            clone.Skills.Add("Dark Slash");
+            var cloned = new Character(newHero); // Using copy constructor for deep cloning
+            cloned.Name = "Dark Arthas";
+            cloned.Stats.Strength = 20;
+            cloned.Inventory[0].Power = 999;
+            cloned.Skills.Add("Dark Slash");
 
             Console.WriteLine("hero: ");
             Console.WriteLine(JsonSerializer.Serialize(hero));
@@ -98,7 +98,7 @@ namespace NeuronApp
             Console.WriteLine(JsonSerializer.Serialize(newHero));
 
             Console.WriteLine("clone: ");
-            Console.WriteLine(JsonSerializer.Serialize(clone));
+            Console.WriteLine(JsonSerializer.Serialize(cloned));
 
             Console.ReadLine();
         }
