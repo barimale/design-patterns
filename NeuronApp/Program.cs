@@ -71,7 +71,7 @@ namespace NeuronApp
                 })
                 .Build();
 
-            var manager = new ManagerService();
+            var manager = new CPExample();
             manager.SetNameTo(hero, "Arthas");
             manager.SetInventoryTo(hero, new List<Item>
             {

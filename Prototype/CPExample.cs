@@ -3,7 +3,7 @@ using static Prototype.CharacterBuilder;
 
 namespace PrototypeAndCollectingParameter
 {
-    public class ManagerService
+    public class CPExample
     {
         public void SetNameTo(Character item, string name)
         {
