@@ -71,17 +71,21 @@ namespace NeuronApp
                 })
                 .Build();
 
-            var manager = new CPExample();
-            manager.SetNameTo(hero, "Arthas");
-            manager.SetInventoryTo(hero, new List<Item>
-            {
-                new Item { Name = "Sword", Power = 15 },
-                new Item { Name = "Shield", Power = 8 }
-            });
-            manager.SetSkillsTo(hero, new List<string> { "Slash", "Block" });
-            manager.SetStatsTo(hero, new Stats { Strength = 10, Agility = 5, Intelligence = 3 });
+            var newHero = CharacterBuilder
+                .CreateBuilder()
+                .Build();
 
-            var clone = new Character(hero); // Using copy constructor for deep cloning
+            var manager = new CPExample();
+            manager.SetNameTo(newHero, "Arthas3");
+            manager.SetInventoryTo(newHero, new List<Item>
+            {
+                new Item { Name = "Sword", Power = 150 },
+                new Item { Name = "Shield", Power = 80 }
+            });
+            manager.SetSkillsTo(newHero, new List<string> { "Slash2", "Block21" });
+            manager.SetStatsTo(newHero, new Stats { Strength = 110, Agility = 15, Intelligence = 13 });
+
+            var clone = new Character(newHero); // Using copy constructor for deep cloning
             clone.Name = "Dark Arthas";
             clone.Stats.Strength = 20;
             clone.Inventory[0].Power = 999;
@@ -89,6 +93,9 @@ namespace NeuronApp
 
             Console.WriteLine("hero: ");
             Console.WriteLine(JsonSerializer.Serialize(hero));
+
+            Console.WriteLine("newHero: ");
+            Console.WriteLine(JsonSerializer.Serialize(newHero));
 
             Console.WriteLine("clone: ");
             Console.WriteLine(JsonSerializer.Serialize(clone));
