@@ -59,10 +59,10 @@
                 Skills = clone.Skills;
             }
 
-            public string Name { get; set; }
-            public Stats Stats { get; set; }
-            public List<Item> Inventory { get; set; }
-            public List<string> Skills { get; set; }
+            public string Name { get; set; } = string.Empty;
+            public Stats Stats { get; set; } = new Stats();
+            public List<Item> Inventory { get; set; } = new List<Item>();
+            public List<string> Skills { get; set; } = new List<string>(); 
 
             public object Clone()
             {
