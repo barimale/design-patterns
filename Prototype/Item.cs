@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Prototype
+﻿namespace Prototype
 {
     public class Item: ICloneable
     {
-        public string Name { get; set; }
-        public int Power { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public int Power { get; set; } = 0;
 
         public object Clone()
         {

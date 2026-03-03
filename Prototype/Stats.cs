@@ -2,9 +2,9 @@
 {
     public class Stats: ICloneable
     {
-        public int Strength { get; set; }
-        public int Agility { get; set; }
-        public int Intelligence { get; set; }
+        public int Strength { get; set; } = 0;
+        public int Agility { get; set; } = 0;
+        public int Intelligence { get; set; } = 0;
 
         public object Clone()
         {
