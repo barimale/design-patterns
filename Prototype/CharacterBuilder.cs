@@ -42,7 +42,7 @@
             return new Character(_character);
         }
 
-        public class Character : ICloneable
+        public record class Character : ICloneable
         {
             internal Character()
             {
