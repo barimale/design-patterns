@@ -2,7 +2,6 @@
 {
     public class DummyInput
     {
-        // intentionally left blank
-        public string Data { get; set; }
+        public string Data { get; set; } = string.Empty;
     }
 }
