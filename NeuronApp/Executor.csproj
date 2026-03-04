@@ -8,9 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ChainOfResponsabilities\ChainOfResponsabilities.csproj" />
+    <ProjectReference Include="..\ChainOfResponsabilities\ChainOfResponsabilitiesAndFacade.csproj" />
     <ProjectReference Include="..\EventVisitator\EventVisitator.csproj" />
-    <ProjectReference Include="..\Prototype\PrototypeAndCollectingParameter.csproj" />
+    <ProjectReference Include="..\Prototype\PrototypeAndBuildersAndCollectingParameter.csproj" />
     <ProjectReference Include="..\ProxyProperties\ProxyProperties.csproj" />
     <ProjectReference Include="..\VisitatorAndOthers\Neurons.csproj" />
     <ProjectReference Include="..\Visitator\Visitator.csproj" />
