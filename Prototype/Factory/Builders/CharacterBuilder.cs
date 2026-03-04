@@ -33,9 +33,20 @@ namespace PrototypeAndCollectingParameter.Factory.Builders
             return this;
         }
 
+        public CharacterBuilder WithInventory(params Item[] inventory)
+        {
+            _character.Inventory = inventory.ToList();
+            return this;
+        }
+
         public CharacterBuilder WithSkills(List<Skill> skills)
         {
             _character.Skills = skills;
+            return this;
+        }
+        public CharacterBuilder WithSkills(params Skill[] skills)
+        {
+            _character.Skills = skills.ToList();
             return this;
         }
 

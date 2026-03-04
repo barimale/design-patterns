@@ -75,16 +75,14 @@ namespace NeuronApp
                      .WithAgility(5)
                      .WithIntelligence(3)
                      .Build())
-                .WithSkills(new List<Skill>
-                {
+                .WithSkills(
                     DataFactory.CreateSkillBuilder().WithName("Slash").Build(),
                     DataFactory.CreateSkillBuilder().WithName("Block").Build()
-                })
-                .WithInventory(new List<Item>
-                {
+                )
+                .WithInventory(
                     DataFactory.CreateItemBuilder().WithName("Sword").WithPower(15).Build(),
-                    DataFactory.CreateItemBuilder().WithName("Shield").WithPower(8).Build(),
-                })
+                    DataFactory.CreateItemBuilder().WithName("Shield").WithPower(8).Build()
+                )
                 .Build();
 
             var newHero = DataFactory
