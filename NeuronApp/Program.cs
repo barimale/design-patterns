@@ -1,15 +1,15 @@
 ﻿using EventVisitator;
 using EventVisitator.Events;
 using EventVisitator.Services;
-using Prototype;
-using PrototypeAndCollectingParameter;
+using PrototypeAndCollectingParameter.Builders;
+using PrototypeAndCollectingParameter.Builders.Model;
+using PrototypeAndCollectingParameter.Services;
 using ProxyProperties;
 using System.Text.Json;
 using Visitator;
 using Visitator.Elements;
 using Visitator.Visitators;
 using VisitatorAndOthers;
-using static Prototype.CharacterBuilder;
 
 namespace NeuronApp
 {

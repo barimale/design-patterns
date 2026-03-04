@@ -1,7 +1,7 @@
-﻿using Prototype;
-using static Prototype.CharacterBuilder;
+﻿using PrototypeAndCollectingParameter.Builders;
+using PrototypeAndCollectingParameter.Builders.Model;
 
-namespace PrototypeAndCollectingParameter
+namespace PrototypeAndCollectingParameter.Services
 {
     public class CollectingParameterPattern
     {

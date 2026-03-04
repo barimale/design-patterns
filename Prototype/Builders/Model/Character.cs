@@ -1,47 +1,7 @@
-﻿namespace Prototype
+﻿using PrototypeAndCollectingParameter.Builders.Model;
+
+namespace PrototypeAndCollectingParameter.Builders
 {
-    public class CharacterBuilder
-    {
-        private readonly Character _character;
-        private CharacterBuilder()
-        {
-            _character = new Character();
-        }
-
-        public static CharacterBuilder CreateBuilder()
-        {
-            return new CharacterBuilder();
-        }
-
-        public CharacterBuilder WithName(string name)
-        {
-            _character.Name = name;
-            return this;
-        }
-
-        public CharacterBuilder WithStats(Stats stats)
-        {
-            _character.Stats = stats;
-            return this;
-        }
-
-        public CharacterBuilder WithInventory(List<Item> inventory)
-        {
-            _character.Inventory = inventory;
-            return this;
-        }
-
-        public CharacterBuilder WithSkills(List<string> skills)
-        {
-            _character.Skills = skills;
-            return this;
-        }
-
-        public Character Build()
-        {
-            return new Character(_character);
-        }
-
         public class Character : ICloneable
         {
             internal Character()
@@ -78,4 +38,3 @@
             }
         }
     }
-}

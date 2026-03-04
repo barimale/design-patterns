@@ -1,4 +1,4 @@
-﻿namespace Prototype
+﻿namespace PrototypeAndCollectingParameter.Builders.Model
 {
     public class Item: ICloneable
     {
