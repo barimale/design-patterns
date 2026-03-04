@@ -1,7 +1,7 @@
-﻿using ChainOfResponsabilities.Model;
-using UploadStreamToQuestDB.Application.Handlers.Abstraction;
+﻿using ChainOfResponsabilitiesAndFacade.Handlers.Abstraction;
+using ChainOfResponsabilitiesAndFacade.Model;
 
-namespace ChainOfResponsabilities.Handlers
+namespace ChainOfResponsabilitiesAndFacade.Handlers
 {
     internal class HandlerA : AbstractHandler, IHandler
     {

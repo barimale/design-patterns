@@ -1,6 +1,7 @@
-﻿using ChainOfResponsabilities.Model;
+﻿using ChainOfResponsabilitiesAndFacade.Model;
 
-namespace UploadStreamToQuestDB.Application.Handlers.Abstraction {
+namespace ChainOfResponsabilitiesAndFacade.Handlers.Abstraction
+{
     /// <summary>
     /// Abstract base class for handling file models in a chain of responsibility pattern.
     /// </summary>

@@ -1,6 +1,6 @@
-﻿using PrototypeAndCollectingParameter.Factory.Builders;
+﻿using PrototypeAndBuildersAndCollectingParameter.Factory.Builders;
 
-namespace PrototypeAndCollectingParameter.Factory
+namespace PrototypeAndBuildersAndCollectingParameter.Factory
 {
     public static class DataFactory
     {

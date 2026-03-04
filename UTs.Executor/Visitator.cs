@@ -1,13 +1,23 @@
-﻿using ChainOfResponsabilities;
-using ChainOfResponsabilities.Model;
+﻿using UTs.Executor.BaseUT;
 using Visitator;
 using Visitator.Elements;
 using Visitator.Visitators;
+using Xunit.Abstractions;
 
 namespace UTs.Executor
 {
-    public class Visitator
+    public class Visitator : PrintToConsoleUTBase
     {
+        private readonly TextWriter _originalOut;
+        private readonly TestOutputTextWriter _redirectWriter;
+
+        public Visitator(ITestOutputHelper output)
+            : base(output)
+        {
+            _originalOut = Console.Out;
+            _redirectWriter = new TestOutputTextWriter(output);
+            Console.SetOut(_redirectWriter);
+        }
         [Fact]
         public void Execute()
         {

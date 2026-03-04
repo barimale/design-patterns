@@ -1,4 +1,4 @@
-﻿namespace VisitatorAndOthers
+﻿namespace Neurons
 {
     public static class NeuronExtensions
     {

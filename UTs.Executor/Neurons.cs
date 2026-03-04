@@ -1,9 +1,22 @@
-﻿using VisitatorAndOthers;
+﻿using Neurons;
+using UTs.Executor.BaseUT;
+using Xunit.Abstractions;
 
 namespace UTs.Executor
 {
-    public class Neurons
+    public class Neurons : PrintToConsoleUTBase
     {
+        private readonly TextWriter _originalOut;
+        private readonly TestOutputTextWriter _redirectWriter;
+
+        public Neurons(ITestOutputHelper output)
+            : base(output)
+        {
+            _originalOut = Console.Out;
+            _redirectWriter = new TestOutputTextWriter(output);
+            Console.SetOut(_redirectWriter);
+        }
+
         [Fact]
         public void Execute()
         {

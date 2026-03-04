@@ -1,6 +1,6 @@
-﻿using PrototypeAndCollectingParameter.Factory.Builders.Model;
+﻿using PrototypeAndBuildersAndCollectingParameter.Factory.Builders.Model;
 
-namespace PrototypeAndCollectingParameter.Services
+namespace PrototypeAndBuildersAndCollectingParameter.Services
 {
     public class CollectingParameterPatternService
     {

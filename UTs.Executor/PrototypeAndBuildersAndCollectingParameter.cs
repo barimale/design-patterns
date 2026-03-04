@@ -1,12 +1,25 @@
-﻿using PrototypeAndCollectingParameter.Factory;
-using PrototypeAndCollectingParameter.Factory.Builders.Model;
-using PrototypeAndCollectingParameter.Services;
+﻿using PrototypeAndBuildersAndCollectingParameter.Factory;
+using PrototypeAndBuildersAndCollectingParameter.Factory.Builders.Model;
+using PrototypeAndBuildersAndCollectingParameter.Services;
 using System.Text.Json;
+using UTs.Executor.BaseUT;
+using Xunit.Abstractions;
 
 namespace UTs.Executor
 {
-    public class PrototypeAndBuildersAndCollectingParameter
+    public class PrototypeAndBuildersAndCollectingParameter : PrintToConsoleUTBase
     {
+        private readonly TextWriter _originalOut;
+        private readonly TestOutputTextWriter _redirectWriter;
+
+        public PrototypeAndBuildersAndCollectingParameter(ITestOutputHelper output)
+            : base(output)
+        {
+            _originalOut = Console.Out;
+            _redirectWriter = new TestOutputTextWriter(output);
+            Console.SetOut(_redirectWriter);
+        }
+
         [Fact]
         public void Execute()
         {
@@ -60,14 +73,14 @@ namespace UTs.Executor
             cloned.Skills.Add(DataFactory.CreateSkillBuilder().WithName("Dark Slash").Build());
 
             // then
-            Console.WriteLine("hero: ");
-            Console.WriteLine(JsonSerializer.Serialize(hero));
+            Output.WriteLine("hero: ");
+            Output.WriteLine(JsonSerializer.Serialize(hero));
 
-            Console.WriteLine("newHero: ");
-            Console.WriteLine(JsonSerializer.Serialize(newHero));
+            Output.WriteLine("newHero: ");
+            Output.WriteLine(JsonSerializer.Serialize(newHero));
 
-            Console.WriteLine("clone: ");
-            Console.WriteLine(JsonSerializer.Serialize(cloned));
+            Output.WriteLine("clone: ");
+            Output.WriteLine(JsonSerializer.Serialize(cloned));
         }
     }
 }

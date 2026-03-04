@@ -1,6 +1,6 @@
-﻿using PrototypeAndCollectingParameter.Factory.Builders.Model;
+﻿using PrototypeAndBuildersAndCollectingParameter.Factory.Builders.Model;
 
-namespace PrototypeAndCollectingParameter.Factory.Builders
+namespace PrototypeAndBuildersAndCollectingParameter.Factory.Builders
 {
     public class SkillBuilder
     {

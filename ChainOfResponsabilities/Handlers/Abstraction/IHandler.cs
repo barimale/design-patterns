@@ -1,6 +1,7 @@
-﻿using ChainOfResponsabilities.Model;
+﻿using ChainOfResponsabilitiesAndFacade.Model;
 
-namespace UploadStreamToQuestDB.Application.Handlers.Abstraction {
+namespace ChainOfResponsabilitiesAndFacade.Handlers.Abstraction
+{
     public interface IHandler {
         IHandler SetNext(IHandler handler);
 

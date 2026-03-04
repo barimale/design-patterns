@@ -1,6 +1,4 @@
-﻿using EventVisitator;
-
-namespace NeuronApp
+﻿namespace EventVisitator
 {
     public class SmtpNotificationSender : INotificationSender
     {

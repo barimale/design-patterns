@@ -1,4 +1,4 @@
-﻿namespace ChainOfResponsabilities.Model
+﻿namespace ChainOfResponsabilitiesAndFacade.Model
 {
     public class DummyInput
     {

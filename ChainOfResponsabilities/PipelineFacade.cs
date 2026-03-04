@@ -1,7 +1,7 @@
-﻿using ChainOfResponsabilities.Handlers;
-using ChainOfResponsabilities.Model;
+﻿using ChainOfResponsabilitiesAndFacade.Handlers;
+using ChainOfResponsabilitiesAndFacade.Model;
 
-namespace ChainOfResponsabilities
+namespace ChainOfResponsabilitiesAndFacade
 {
     public class PipelineFacade
     {

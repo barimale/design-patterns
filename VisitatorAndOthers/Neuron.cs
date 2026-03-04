@@ -1,6 +1,6 @@
-﻿using VisitatorAndOthers.Abstraction;
+﻿using Neurons.Abstraction;
 
-namespace VisitatorAndOthers
+namespace Neurons
 {
     public class Neuron: Scalar<Neuron>
     {
