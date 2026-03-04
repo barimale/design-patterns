@@ -7,6 +7,7 @@ using PrototypeAndCollectingParameter.Factory;
 using PrototypeAndCollectingParameter.Factory.Builders.Model;
 using PrototypeAndCollectingParameter.Services;
 using ProxyProperties.Model;
+using Singleton;
 using StrategyAndTemplateMethod;
 using StrategyAndTemplateMethod.Model;
 using System.Text.Json;
@@ -24,6 +25,19 @@ namespace NeuronApp
             var pipeline = new PipelineFacade();
             pipeline.Initialize();
             pipeline.Run(new DummyInput { Data = "Sample data" }).Wait();
+
+            // -----------------------------------
+
+            var singleton = SingletonPattern.Instance;
+            singleton.Data = "Hello, Singleton!";
+            Console.WriteLine(singleton.Data);
+
+            var second = SingletonPattern.Instance;
+            Console.WriteLine(second.Data);
+
+            second.Data = "Changed data";
+            Console.WriteLine(second.Data);
+            Console.WriteLine(singleton.Data);
 
             // -----------------------------------
 
