@@ -14,5 +14,5 @@
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
   </Folder>
-  <Project Path="NeuronApp/Executor.csproj" Id="22121ceb-3f9b-474b-8841-8529909dc43f" />
+  <Project Path="UTs.Executor/UTs.Executor.csproj" Id="c39e95a9-4b92-4e2f-b64a-5109cd35ad80" />
 </Solution>
