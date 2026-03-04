@@ -7,6 +7,8 @@ using PrototypeAndCollectingParameter.Factory;
 using PrototypeAndCollectingParameter.Factory.Builders.Model;
 using PrototypeAndCollectingParameter.Services;
 using ProxyProperties.Model;
+using StrategyAndTemplateMethod;
+using StrategyAndTemplateMethod.Model;
 using System.Text.Json;
 using Visitator;
 using Visitator.Elements;
@@ -22,6 +24,12 @@ namespace NeuronApp
             var pipeline = new PipelineFacade();
             pipeline.Initialize();
             pipeline.Run(new DummyInput { Data = "Sample data" }).Wait();
+
+            // -----------------------------------
+
+            var resolver = new StrategyResolver();
+            resolver.Resolve(StrategyEnum.SIMPLE).Execute();
+            resolver.Resolve(StrategyEnum.COMPLEX).Execute();
 
             // -----------------------------------
             var neuron1 = new Neuron();
