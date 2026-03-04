@@ -7,7 +7,7 @@ namespace ChainOfResponsabilities.Handlers
     {
         public override Task<object> Handle(DummyInput files)
         {
-            Console.WriteLine("HandlerC is processing the files...");
+            Console.WriteLine("HandlerC is processing the files..." + files.Data);
 
             return base.Handle(files);
         }
