@@ -4,9 +4,10 @@
   </Folder>
   <Project Path="ChainOfResponsabilities/ChainOfResponsabilities.csproj" Id="b2f1efa2-3205-4253-a0a7-4f2fcd6d020c" />
   <Project Path="EventVisitator/EventVisitator.csproj" Id="685c8f96-b2bd-4e76-885a-2d844bb562b6" />
-  <Project Path="NeuronApp/NeuronAndVisitatorApp.csproj" Id="22121ceb-3f9b-474b-8841-8529909dc43f" />
+  <Project Path="NeuronApp/Executor.csproj" Id="22121ceb-3f9b-474b-8841-8529909dc43f" />
   <Project Path="Prototype/PrototypeAndCollectingParameter.csproj" Id="fa423196-f8c6-49f7-83f3-8bb52400c7cb" />
   <Project Path="ProxyProperties/ProxyProperties.csproj" Id="5c0054f0-67bf-43bb-b4b4-99990acaab33" />
+  <Project Path="Singleton/Singleton.csproj" Id="4301d78d-a046-4e10-b012-338e9b415491" />
   <Project Path="Visitator/Visitator.csproj" />
   <Project Path="VisitatorAndOthers/Neurons.csproj" />
 </Solution>
