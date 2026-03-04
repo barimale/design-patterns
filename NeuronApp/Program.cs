@@ -1,4 +1,6 @@
-﻿using EventVisitator;
+﻿using ChainOfResponsabilities;
+using ChainOfResponsabilities.Model;
+using EventVisitator;
 using EventVisitator.Events;
 using EventVisitator.Services;
 using PrototypeAndCollectingParameter.Builders;
@@ -18,6 +20,11 @@ namespace NeuronApp
     {
         static void Main(string[] args)
         {
+            var pipeline = new PipelineFacade();
+            pipeline.Initialize();
+            pipeline.Run(new DummyInput { Data = "Sample data" }).Wait();
+
+            // -----------------------------------
             var neuron1 = new Neuron();
             var neuron2 = new Neuron();
             var layer1 = new NeuronLayer(3);
