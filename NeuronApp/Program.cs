@@ -3,10 +3,9 @@ using ChainOfResponsabilities.Model;
 using EventVisitator;
 using EventVisitator.Events;
 using EventVisitator.Services;
-using PrototypeAndCollectingParameter.Builders;
-using PrototypeAndCollectingParameter.Builders.Model;
+using PrototypeAndCollectingParameter.Factory;
+using PrototypeAndCollectingParameter.Factory.Builders.Model;
 using PrototypeAndCollectingParameter.Services;
-using ProxyProperties;
 using ProxyProperties.Model;
 using System.Text.Json;
 using Visitator;
@@ -67,8 +66,8 @@ namespace NeuronApp
 
             // ----------------------------------
 
-            var hero = CharacterBuilder
-                .CreateBuilder()
+            var hero = DataFactory
+                .CreateCharacterBuilder()
                 .WithName("name")
                 .WithStats(new Stats { Strength = 10, Agility = 5, Intelligence = 3 })
                 .WithSkills(new List<string> { "Slash", "Block" })
@@ -79,8 +78,8 @@ namespace NeuronApp
                 })
                 .Build();
 
-            var newHero = CharacterBuilder
-                .CreateBuilder()
+            var newHero = DataFactory
+                .CreateCharacterBuilder()
                 .Build();
 
             var manager = new CollectingParameterPatternService();

@@ -1,8 +1,8 @@
-﻿using PrototypeAndCollectingParameter.Builders.Model;
+﻿using PrototypeAndCollectingParameter.Factory.Builders.Model;
 
-namespace PrototypeAndCollectingParameter.Builders
+namespace PrototypeAndCollectingParameter.Factory.Builders
 {
-    public partial class CharacterBuilder
+    public class CharacterBuilder
     {
         private readonly Character _character;
         private CharacterBuilder()
@@ -10,7 +10,7 @@ namespace PrototypeAndCollectingParameter.Builders
             _character = new Character();
         }
 
-        public static CharacterBuilder CreateBuilder()
+        internal static CharacterBuilder CreateBuilder()
         {
             return new CharacterBuilder();
         }

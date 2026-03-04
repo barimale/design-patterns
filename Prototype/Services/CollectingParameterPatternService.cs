@@ -1,5 +1,4 @@
-﻿using PrototypeAndCollectingParameter.Builders;
-using PrototypeAndCollectingParameter.Builders.Model;
+﻿using PrototypeAndCollectingParameter.Factory.Builders.Model;
 
 namespace PrototypeAndCollectingParameter.Services
 {

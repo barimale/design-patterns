@@ -1,4 +1,4 @@
-﻿namespace PrototypeAndCollectingParameter.Builders.Model
+﻿namespace PrototypeAndCollectingParameter.Factory.Builders.Model
 {
     public class Stats: ICloneable
     {

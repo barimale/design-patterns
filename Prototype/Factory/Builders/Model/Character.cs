@@ -1,6 +1,4 @@
-﻿using PrototypeAndCollectingParameter.Builders.Model;
-
-namespace PrototypeAndCollectingParameter.Builders
+﻿namespace PrototypeAndCollectingParameter.Factory.Builders.Model
 {
         public class Character : ICloneable
         {
