@@ -33,7 +33,7 @@ namespace PrototypeAndCollectingParameter.Factory.Builders
             return this;
         }
 
-        public CharacterBuilder WithSkills(List<string> skills)
+        public CharacterBuilder WithSkills(List<Skill> skills)
         {
             _character.Skills = skills;
             return this;

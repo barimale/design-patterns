@@ -69,8 +69,17 @@ namespace NeuronApp
             var hero = DataFactory
                 .CreateCharacterBuilder()
                 .WithName("name")
-                .WithStats(new Stats { Strength = 10, Agility = 5, Intelligence = 3 })
-                .WithSkills(new List<string> { "Slash", "Block" })
+                .WithStats(
+                    DataFactory.CreateStatsBuilder()
+                     .WithStrength(10)
+                     .WithAgility(5)
+                     .WithIntelligence(3)
+                     .Build())
+                .WithSkills(new List<Skill>
+                {
+                    DataFactory.CreateSkillBuilder().WithName("Slash").Build(),
+                    DataFactory.CreateSkillBuilder().WithName("Block").Build()
+                })
                 .WithInventory(new List<Item>
                 {
                     DataFactory.CreateItemBuilder().WithName("Sword").WithPower(15).Build(),
@@ -89,14 +98,22 @@ namespace NeuronApp
                  DataFactory.CreateItemBuilder().WithName("Sword").WithPower(150).Build(),
                  DataFactory.CreateItemBuilder().WithName("Shield").WithPower(80).Build(),
             });
-            manager.SetSkillsTo(newHero, new List<string> { "Slash2", "Block21" });
-            manager.SetStatsTo(newHero, new Stats { Strength = 110, Agility = 15, Intelligence = 13 });
+            manager.SetSkillsTo(newHero, new List<Skill> {
+                DataFactory.CreateSkillBuilder().WithName("Slas2").Build(),
+                DataFactory.CreateSkillBuilder().WithName("Block2").Build()
+            });
+            manager.SetStatsTo(newHero, DataFactory
+                .CreateStatsBuilder()
+                .WithIntelligence(11)
+                .WithAgility(11)
+                .WithStrength(11)
+                .Build());
 
             var cloned = new Character(newHero); // Using copy constructor for deep cloning
             cloned.Name = "Dark Arthas";
             cloned.Stats.Strength = 20;
             cloned.Inventory[0].Power = 999;
-            cloned.Skills.Add("Dark Slash");
+            cloned.Skills.Add(DataFactory.CreateSkillBuilder().WithName("Dark Slash").Build());
 
             Console.WriteLine("hero: ");
             Console.WriteLine(JsonSerializer.Serialize(hero));

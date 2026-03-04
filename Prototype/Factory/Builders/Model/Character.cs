@@ -20,7 +20,7 @@
             public string Name { get; set; } = string.Empty;
             public Stats Stats { get; set; } = new Stats();
             public List<Item> Inventory { get; set; } = [];
-            public List<string> Skills { get; set; } = []; 
+            public List<Skill> Skills { get; set; } = []; 
 
             public object Clone()
             {
@@ -31,7 +31,9 @@
                     Inventory = this.Inventory
                         .Select(i => (Item)i.Clone())
                         .ToList(),
-                    Skills = new List<string>(this.Skills)
+                    Skills = this.Skills
+                        .Select(i => (Skill)i.Clone())
+                        .ToList(),
                 };
             }
         }

@@ -13,5 +13,15 @@ namespace PrototypeAndCollectingParameter.Factory
         {
             return ItemBuilder.CreateBuilder();
         }
+
+        public static StatsBuilder CreateStatsBuilder()
+        {
+            return StatsBuilder.CreateBuilder();
+        }
+
+        public static SkillBuilder CreateSkillBuilder()
+        {
+            return SkillBuilder.CreateBuilder();
+        }
     }
 }

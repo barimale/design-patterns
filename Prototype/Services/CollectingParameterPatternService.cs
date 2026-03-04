@@ -19,7 +19,7 @@ namespace PrototypeAndCollectingParameter.Services
             item.Inventory = inventory;
         }
 
-        public void SetSkillsTo(Character item, List<string> skills)
+        public void SetSkillsTo(Character item, List<Skill> skills)
         {
             item.Skills = skills;
         }
