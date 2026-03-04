@@ -3,7 +3,7 @@ using PrototypeAndCollectingParameter.Builders.Model;
 
 namespace PrototypeAndCollectingParameter.Services
 {
-    public class CollectingParameterPattern
+    public class CollectingParameterPatternService
     {
         public void SetNameTo(Character item, string name)
         {
