@@ -1,4 +1,4 @@
-﻿namespace ProxyProperties
+﻿namespace ProxyProperties.Abstraction
 {
     public class Property<T> where T : new()
     {

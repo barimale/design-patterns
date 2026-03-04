@@ -5,6 +5,7 @@ using PrototypeAndCollectingParameter.Builders;
 using PrototypeAndCollectingParameter.Builders.Model;
 using PrototypeAndCollectingParameter.Services;
 using ProxyProperties;
+using ProxyProperties.Model;
 using System.Text.Json;
 using Visitator;
 using Visitator.Elements;

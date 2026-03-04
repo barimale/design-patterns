@@ -1,4 +1,6 @@
-﻿namespace ProxyProperties
+﻿using ProxyProperties.Abstraction;
+
+namespace ProxyProperties.Model
 {
     public class Creature
     {
