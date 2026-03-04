@@ -4,6 +4,18 @@
     {
         public string Name { get; set; } = string.Empty;
         public int Power { get; set; } = 0;
+        internal Item()
+        {
+            // intentionally left blank
+        }
+
+        public Item(Item item)
+        {
+            var cloned = (Item)item.Clone();
+
+            this.Name = cloned.Name;
+            this.Power = cloned.Power;
+        }
 
         public object Clone()
         {

@@ -8,5 +8,10 @@ namespace PrototypeAndCollectingParameter.Factory
         {
             return CharacterBuilder.CreateBuilder();
         }
+
+        public static ItemBuilder CreateItemBuilder()
+        {
+            return ItemBuilder.CreateBuilder();
+        }
     }
 }

@@ -73,8 +73,8 @@ namespace NeuronApp
                 .WithSkills(new List<string> { "Slash", "Block" })
                 .WithInventory(new List<Item>
                 {
-                    new Item { Name = "Sword", Power = 15 },
-                    new Item { Name = "Shield", Power = 8 }
+                    DataFactory.CreateItemBuilder().WithName("Sword").WithPower(15).Build(),
+                    DataFactory.CreateItemBuilder().WithName("Shield").WithPower(8).Build(),
                 })
                 .Build();
 
@@ -86,8 +86,8 @@ namespace NeuronApp
             manager.SetNameTo(newHero, "Arthas3");
             manager.SetInventoryTo(newHero, new List<Item>
             {
-                new Item { Name = "Sword", Power = 150 },
-                new Item { Name = "Shield", Power = 80 }
+                 DataFactory.CreateItemBuilder().WithName("Sword").WithPower(150).Build(),
+                 DataFactory.CreateItemBuilder().WithName("Shield").WithPower(80).Build(),
             });
             manager.SetSkillsTo(newHero, new List<string> { "Slash2", "Block21" });
             manager.SetStatsTo(newHero, new Stats { Strength = 110, Agility = 15, Intelligence = 13 });
