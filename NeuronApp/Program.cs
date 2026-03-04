@@ -75,7 +75,7 @@ namespace NeuronApp
                 .CreateBuilder()
                 .Build();
 
-            var manager = new CPExample();
+            var manager = new CollectingParameterPattern();
             manager.SetNameTo(newHero, "Arthas3");
             manager.SetInventoryTo(newHero, new List<Item>
             {
