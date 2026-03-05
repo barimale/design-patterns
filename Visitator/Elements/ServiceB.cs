@@ -1,4 +1,6 @@
-﻿namespace Visitator.Elements
+﻿using Visitor;
+
+namespace Visitor.Elements
 {
     public class ServiceB : IServiceItem 
     { 

@@ -1,17 +1,17 @@
 ﻿using UTs.Executor.BaseUT;
-using Visitator;
-using Visitator.Elements;
-using Visitator.Visitators;
+using Visitor;
+using Visitor.Elements;
+using Visitor.Visitators;
 using Xunit.Abstractions;
 
 namespace UTs.Executor
 {
-    public class Visitator : PrintToConsoleUTBase
+    public class Visitor : PrintToConsoleUTBase
     {
         private readonly TextWriter _originalOut;
         private readonly TestOutputTextWriter _redirectWriter;
 
-        public Visitator(ITestOutputHelper output)
+        public Visitor(ITestOutputHelper output)
             : base(output)
         {
             _originalOut = Console.Out;

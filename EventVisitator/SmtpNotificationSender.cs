@@ -1,4 +1,4 @@
-﻿namespace EventVisitator
+﻿namespace EventVisitor
 {
     public class SmtpNotificationSender : INotificationSender
     {

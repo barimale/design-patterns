@@ -1,6 +1,6 @@
-﻿using Visitator.Elements;
+﻿using Visitor.Elements;
 
-namespace Visitator
+namespace Visitor
 {
     public interface IVisitor
     {

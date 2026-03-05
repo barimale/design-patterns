@@ -1,7 +1,7 @@
-﻿using EventVisitator.Events;
-using EventVisitator.Services;
+﻿using EventVisitor.Events;
+using EventVisitor.Services;
 
-namespace EventVisitator
+namespace EventVisitor
 {
     public class EventProcessor
     {

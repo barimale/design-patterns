@@ -1,17 +1,17 @@
-﻿using EventVisitator;
-using EventVisitator.Events;
-using EventVisitator.Services;
+﻿using EventVisitor;
+using EventVisitor.Events;
+using EventVisitor.Services;
 using UTs.Executor.BaseUT;
 using Xunit.Abstractions;
 
 namespace UTs.Executor
 {
-    public class EventVisitator : PrintToConsoleUTBase
+    public class EventVisitor : PrintToConsoleUTBase
     {
         private readonly TextWriter _originalOut;
         private readonly TestOutputTextWriter _redirectWriter;
 
-        public EventVisitator(ITestOutputHelper output)
+        public EventVisitor(ITestOutputHelper output)
             : base(output)
         {
             _originalOut = Console.Out;

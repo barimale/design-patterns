@@ -1,8 +1,9 @@
-﻿using System;
+﻿using EventVisitor;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace EventVisitator.Events
+namespace EventVisitor.Events
 {
     public class UserRegisteredEvent : IEvent
     {

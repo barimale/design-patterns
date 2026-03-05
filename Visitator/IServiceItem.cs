@@ -1,4 +1,4 @@
-﻿using Visitator;
+﻿using Visitor;
 
 public interface IServiceItem 
 { 

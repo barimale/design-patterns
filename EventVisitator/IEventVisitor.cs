@@ -1,6 +1,6 @@
-﻿using EventVisitator.Events;
+﻿using EventVisitor.Events;
 
-namespace EventVisitator
+namespace EventVisitor
 {
     public interface IEventVisitor
     {

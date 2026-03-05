@@ -1,6 +1,6 @@
-﻿using EventVisitator.Events;
+﻿using EventVisitor.Events;
 
-namespace EventVisitator.Services
+namespace EventVisitor.Services
 {
     public class NotifierService : IEventVisitor
     {

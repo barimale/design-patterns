@@ -1,6 +1,7 @@
-﻿using Visitator.Elements;
+﻿using Visitor;
+using Visitor.Elements;
 
-namespace Visitator.Visitators
+namespace Visitor.Visitators
 {
     public class NotifyManager : IVisitor 
     {

@@ -1,4 +1,6 @@
-﻿namespace EventVisitator.Events
+﻿using EventVisitor;
+
+namespace EventVisitor.Events
 {
     public interface IEvent
     {
