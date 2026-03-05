@@ -4,12 +4,12 @@
     {
         public void SendEmail(string to, string subject, string body)
         {
-            //intentionally left blank
+            Console.WriteLine("Send email to: " + to + " with subject: " + subject + " with body: " + body);
         }
 
         public void SendSms(string phone, string message)
         {
-            //intentionally left blank
+            Console.WriteLine("Send sms to: " + phone + " with message: " + message);
         }
     }
 }
