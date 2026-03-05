@@ -28,7 +28,7 @@ namespace UTs.Executor
             var processor = new EventProcessor(notifier2);
 
             IEvent ev1 = new UserRegisteredEvent("user@test.com", "barimale");
-            IEvent ev2 = new OrderPaidEvent(123, 199.99m);
+            IEvent ev2 = new OrderPaidEvent(123111222, 199.99m);
 
             // when
             processor.Process(ev1);
