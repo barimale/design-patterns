@@ -29,7 +29,7 @@ namespace UTs.Executor
             await pipeline.Run(new DummyInput { Data = "Sample data" });
 
             // then
-            _originalOut.WriteLine("Execution completed. Check test output for details.");
+            Output.WriteLine("Execution completed. Check test output for details.");
         }
     }
 }
