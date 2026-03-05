@@ -84,7 +84,7 @@ namespace UTs.Executor
         }
 
         [Fact]
-        public void ExecuteWithFunc()
+        public void ExecuteWithElements()
         {
             // given
             var hero = DataFactory
