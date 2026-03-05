@@ -7,9 +7,9 @@
     <Project Path="Strategy/StrategyAndTemplateMethod.csproj" Id="26c2b1e8-ec23-4da7-9130-0aa85733aa53" />
     <Project Path="VisitatorAndOthers/Neurons.csproj" />
   </Folder>
-  <Folder Name="/DesignPatterns/Visitators/">
-    <Project Path="EventVisitator/EventVisitator.csproj" Id="685c8f96-b2bd-4e76-885a-2d844bb562b6" />
-    <Project Path="Visitator/Visitator.csproj" />
+  <Folder Name="/DesignPatterns/Visitors/">
+    <Project Path="EventVisitator/EventVisitor.csproj" Id="685c8f96-b2bd-4e76-885a-2d844bb562b6" />
+    <Project Path="Visitator/Visitor.csproj" />
   </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
