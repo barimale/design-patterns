@@ -30,9 +30,13 @@ namespace UTs.Executor
             IEvent ev1 = new UserRegisteredEvent("user@test.com", "barimale");
             IEvent ev2 = new OrderPaidEvent(123111222, 199.99m);
 
+            var evs = new List<IEvent> { ev1, ev2 };
+
             // when
-            processor.Process(ev1);
-            processor.Process(ev2);
+            foreach (var ev in evs)
+            {
+                processor.Process(ev);
+            }
 
             // then
         }
