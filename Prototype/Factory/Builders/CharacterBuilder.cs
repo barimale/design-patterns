@@ -4,7 +4,7 @@ namespace PrototypeAndBuildersAndCollectingParameter.Factory.Builders
 {
     public class CharacterBuilder
     {
-        private readonly Character _character;
+        private Character _character;
         private CharacterBuilder()
         {
             _character = new Character();
@@ -13,6 +13,12 @@ namespace PrototypeAndBuildersAndCollectingParameter.Factory.Builders
         internal static CharacterBuilder CreateBuilder()
         {
             return new CharacterBuilder();
+        }
+
+        public CharacterBuilder WithElements(Func<Character, Character> func)
+        {
+            _character = func(_character);
+            return this;
         }
 
         public CharacterBuilder WithName(string name)

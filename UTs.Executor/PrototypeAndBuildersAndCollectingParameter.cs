@@ -82,5 +82,41 @@ namespace UTs.Executor
             Output.WriteLine("clone: ");
             Output.WriteLine(JsonSerializer.Serialize(cloned));
         }
+
+        [Fact]
+        public void ExecuteWithFunc()
+        {
+            // given
+            var hero = DataFactory
+                .CreateCharacterBuilder()
+                .WithName("name")
+                .WithElements((p) =>
+                {
+                    p.Skills = new List<Skill>
+                    {
+                        DataFactory.CreateSkillBuilder().WithName("Slash").Build(),
+                        DataFactory.CreateSkillBuilder().WithName("Block").Build()
+                    };
+
+                    return p;
+                })
+                .WithStats(
+                    DataFactory.CreateStatsBuilder()
+                     .WithStrength(10)
+                     .WithAgility(5)
+                     .WithIntelligence(3)
+                     .Build())
+                .WithInventory(
+                    DataFactory.CreateItemBuilder().WithName("Sword").WithPower(15).Build(),
+                    DataFactory.CreateItemBuilder().WithName("Shield").WithPower(8).Build()
+                )
+                .Build();
+
+            // when
+
+            // then
+            Assert.Equal("Slash", hero.Skills[0].Name);
+            Assert.Equal("Block", hero.Skills[1].Name);
+        }
     }
 }
