@@ -38,6 +38,7 @@ namespace UTs.Executor
             }
 
             // then
+            _originalOut.WriteLine("Execution completed. Check test output for details.");
         }
     }
 }

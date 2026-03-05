@@ -28,6 +28,7 @@ namespace UTs.Executor
             creature.Agility = 12;
 
             // then
+            _originalOut.WriteLine("Execution completed. Check test output for details.");
         }
     }
 }
