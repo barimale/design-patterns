@@ -97,15 +97,15 @@ namespace UTs.Executor
                         DataFactory.CreateSkillBuilder().WithName("Slash").Build(),
                         DataFactory.CreateSkillBuilder().WithName("Block").Build()
                     };
-
-                    return p;
-                })
-                .WithStats(
-                    DataFactory.CreateStatsBuilder()
+                    p.Stats = DataFactory
+                     .CreateStatsBuilder()
                      .WithStrength(10)
                      .WithAgility(5)
                      .WithIntelligence(3)
-                     .Build())
+                     .Build();
+
+                    return p;
+                })
                 .WithInventory(
                     DataFactory.CreateItemBuilder().WithName("Sword").WithPower(15).Build(),
                     DataFactory.CreateItemBuilder().WithName("Shield").WithPower(8).Build()
@@ -117,6 +117,7 @@ namespace UTs.Executor
             // then
             Assert.Equal("Slash", hero.Skills[0].Name);
             Assert.Equal("Block", hero.Skills[1].Name);
+            Assert.Equal(3, hero.Stats.Intelligence);
         }
     }
 }
