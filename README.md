@@ -1,3 +1,4 @@
+Implemented design patterns:
 - Visitor
 - Proxy
 - Prototype
