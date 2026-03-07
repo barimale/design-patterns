@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Adapter\Adapter.csproj" />
     <ProjectReference Include="..\ChainOfResponsabilities\ChainOfResponsabilitiesAndFacade.csproj" />
     <ProjectReference Include="..\EventObserver\EventObserver.csproj" />
     <ProjectReference Include="..\EventVisitator\EventVisitor.csproj" />

@@ -10,3 +10,4 @@ Implemented design patterns:
 - Composite
 - Factory method
 - Observer
+- Flyweight

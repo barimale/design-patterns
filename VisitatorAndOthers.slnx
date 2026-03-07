@@ -4,6 +4,7 @@
     <File Path="README.md" />
   </Folder>
   <Folder Name="/Design Patterns/">
+    <Project Path="Adapter/Adapter.csproj" Id="8e0cbf90-38d6-4a72-a04a-16a7a3255b9f" />
     <Project Path="ChainOfResponsabilities/ChainOfResponsabilitiesAndFacade.csproj" Id="b2f1efa2-3205-4253-a0a7-4f2fcd6d020c" />
     <Project Path="FlyweightLazyLoading/FlyweightLazyLoading.csproj" Id="7a7fa84e-b2ac-47ed-8561-b06519562327" />
     <Project Path="Prototype/PrototypeAndBuildersAndCollectingParameter.csproj" Id="fa423196-f8c6-49f7-83f3-8bb52400c7cb" />
