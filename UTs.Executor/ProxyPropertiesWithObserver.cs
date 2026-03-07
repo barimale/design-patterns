@@ -1,8 +1,7 @@
-﻿using ProxyProperties.Model;
+﻿using ProxyPropertiesWithObserver;
+using ProxyPropertiesWithObserver.Model;
 using UTs.Executor.BaseUT;
 using Xunit.Abstractions;
-using PropertyProvider = ProxyProperties.PropertySettings.PropertyProvider;
-using PropertyProviderSettings = ProxyProperties.PropertySettings.PropertyProviderSettings;
 
 namespace UTs.Executor
 {
@@ -23,16 +22,14 @@ namespace UTs.Executor
         public void Execute()
         {
             // given
-            var settings = new PropertyProviderSettings
-            {
-                ConnectionString = "ORACLE DB CONNECTION STRING"
-            };
-            PropertyProvider.SetPropertyProviderSettings(settings);
+            var creature = new Creature();
+            var obs1 = new ConsoleObserver<int>("Observer A", creature.agility);
+            var obs2 = new ConsoleObserver<int>("Observer B", creature.agility);
+            var obs3 = new ConsoleObserver<string>("Observer C", creature.inteligence);
 
             // when
-            var creature = new Creature();
             creature.Agility = 12;
-            creature.Inteligence = "15";
+            creature.Inteligence = "SMART";
             var agility = creature.Agility;
             var inteligence = creature.Inteligence;
 

@@ -4,18 +4,17 @@
     {
         private T value;
         private readonly string name;
-        private static string _connectionString = string.Empty;
+        public event EventHandler<T> StateChanged;
 
         internal Property() : this(default, string.Empty) 
         { 
             // intentionally left blank
         }
 
-        internal Property(T value, string connectionString, string name = "")
+        internal Property(T value, string name = "")
         {
             this.name = name;
             this.Value = value;
-            _connectionString = connectionString;
         }
 
         public T Value
@@ -27,9 +26,9 @@
             }
             set
             {
-                Console.WriteLine($"Send" + _connectionString);
                 Console.WriteLine($"Setting value of property {name} to: {value}");
                 this.value = value;
+                OnStateChanged(value);
             }
         }
 
@@ -40,7 +39,12 @@
 
         public static implicit operator Property<T>(T value)
         {
-            return new Property<T>(value, _connectionString);
+            return new Property<T>(value);
+        }
+
+        protected virtual void OnStateChanged(T newValue)
+        {
+            StateChanged?.Invoke(this, newValue);
         }
     }
 }
