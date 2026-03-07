@@ -1,8 +1,9 @@
-Visitor
-Proxy
-Prototype
-Collecting parameter
-Strategy
-Template method
-Singleton
-Builder
+Implemented design patterns:
+- Visitor
+- Proxy
+- Prototype
+- Collecting parameter
+- Strategy
+- Template method
+- Singleton
+- Builder
