@@ -25,7 +25,7 @@ public class TestOutputTextWriter : TextWriter
         }
     }
 
-    public override void Write(string? value)
+    public override void Write(string value)
     {
         if (string.IsNullOrEmpty(value)) return;
         var lines = value.Split(new[] { "\r\n", "\n" }, StringSplitOptions.None);
