@@ -1,5 +1,9 @@
 <Solution>
-  <Folder Name="/DesignPatterns/">
+  <Folder Name="/.Solution Items/">
+    <File Path=".gitignore" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/Design Patterns/">
     <Project Path="ChainOfResponsabilities/ChainOfResponsabilitiesAndFacade.csproj" Id="b2f1efa2-3205-4253-a0a7-4f2fcd6d020c" />
     <Project Path="Prototype/PrototypeAndBuildersAndCollectingParameter.csproj" Id="fa423196-f8c6-49f7-83f3-8bb52400c7cb" />
     <Project Path="ProxyProperties/ProxyProperties.csproj" Id="5c0054f0-67bf-43bb-b4b4-99990acaab33" />
@@ -7,12 +11,9 @@
     <Project Path="Strategy/StrategyAndTemplateMethod.csproj" Id="26c2b1e8-ec23-4da7-9130-0aa85733aa53" />
     <Project Path="VisitatorAndOthers/Composite.csproj" />
   </Folder>
-  <Folder Name="/DesignPatterns/Visitors/">
+  <Folder Name="/Design Patterns/Visitors/">
     <Project Path="EventVisitator/EventVisitor.csproj" Id="685c8f96-b2bd-4e76-885a-2d844bb562b6" />
     <Project Path="Visitator/Visitor.csproj" />
-  </Folder>
-  <Folder Name="/Solution Items/">
-    <File Path=".gitignore" />
   </Folder>
   <Project Path="UTs.Executor/UTs.Executor.csproj" Id="c39e95a9-4b92-4e2f-b64a-5109cd35ad80" />
 </Solution>

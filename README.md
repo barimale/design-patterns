@@ -7,3 +7,5 @@ Implemented design patterns:
 - Template method
 - Singleton
 - Builder
+- Composite
+- Factory method
