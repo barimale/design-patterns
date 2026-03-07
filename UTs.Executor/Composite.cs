@@ -4,12 +4,12 @@ using Xunit.Abstractions;
 
 namespace UTs.Executor
 {
-    public class Neurons : PrintToConsoleUTBase
+    public class Composite : PrintToConsoleUTBase
     {
         private readonly TextWriter _originalOut;
         private readonly TestOutputTextWriter _redirectWriter;
 
-        public Neurons(ITestOutputHelper output)
+        public Composite(ITestOutputHelper output)
             : base(output)
         {
             _originalOut = Console.Out;
@@ -30,7 +30,6 @@ namespace UTs.Executor
 
             neuron2.ConnectTo(layer1);
             layer1.ConnectTo(layer2);
-            //layer2.ConnectTo(neuron1);
 
             // when
 

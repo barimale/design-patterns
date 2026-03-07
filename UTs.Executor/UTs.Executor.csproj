@@ -22,7 +22,7 @@
     <ProjectReference Include="..\ProxyProperties\ProxyProperties.csproj" />
     <ProjectReference Include="..\Singleton\Singleton.csproj" />
     <ProjectReference Include="..\Strategy\StrategyAndTemplateMethod.csproj" />
-    <ProjectReference Include="..\VisitatorAndOthers\Neurons.csproj" />
+    <ProjectReference Include="..\VisitatorAndOthers\Composite.csproj" />
     <ProjectReference Include="..\Visitator\Visitor.csproj" />
   </ItemGroup>
 
