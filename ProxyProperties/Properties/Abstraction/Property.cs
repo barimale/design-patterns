@@ -6,12 +6,12 @@
         private readonly string name;
         private static string _connectionString = string.Empty;
 
-        public Property() : this(default, string.Empty) 
+        internal Property() : this(default, string.Empty) 
         { 
             // intentionally left blank
         }
 
-        public Property(T value, string connectionString, string name = "")
+        internal Property(T value, string connectionString, string name = "")
         {
             this.name = name;
             this.Value = value;
