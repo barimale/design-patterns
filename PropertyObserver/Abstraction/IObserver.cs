@@ -1,4 +1,4 @@
-﻿namespace PropertyObserver
+﻿namespace PropertyObserver.Abstraction
 {
     public interface IObserver
     {

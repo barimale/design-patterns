@@ -1,4 +1,4 @@
-﻿using PropertyObserver;
+﻿using PropertyObserver.Abstraction;
 
 public class Subject
 {
