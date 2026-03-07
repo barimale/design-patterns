@@ -11,3 +11,4 @@ Implemented design patterns:
 - Factory method
 - Observer
 - Flyweight
+- Adapter
