@@ -1,6 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 
-namespace Neurons
+namespace Composite
 {
     public class NeuronLayer: Collection<Neuron>
     {

@@ -19,6 +19,7 @@
     <ProjectReference Include="..\ChainOfResponsabilities\ChainOfResponsabilitiesAndFacade.csproj" />
     <ProjectReference Include="..\EventVisitator\EventVisitor.csproj" />
     <ProjectReference Include="..\Prototype\PrototypeAndBuildersAndCollectingParameter.csproj" />
+    <ProjectReference Include="..\ProxyPropertiesWithObserver\ProxyPropertiesWithObserver.csproj" />
     <ProjectReference Include="..\ProxyProperties\ProxyProperties.csproj" />
     <ProjectReference Include="..\Singleton\Singleton.csproj" />
     <ProjectReference Include="..\Strategy\StrategyAndTemplateMethod.csproj" />

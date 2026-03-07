@@ -1,4 +1,4 @@
-﻿namespace Neurons
+﻿namespace Composite
 {
     public static class NeuronExtensions
     {

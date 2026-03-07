@@ -1,6 +1,6 @@
-﻿using ProxyProperties.Properties.Abstraction;
+﻿using ProxyProperties.PropertySettings.Abstraction;
 
-namespace ProxyProperties.Properties
+namespace ProxyProperties.PropertySettings
 {
     public static class PropertyProvider
     {

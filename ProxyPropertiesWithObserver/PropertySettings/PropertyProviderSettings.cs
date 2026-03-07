@@ -1,4 +1,4 @@
-﻿namespace ProxyProperties.Properties
+﻿namespace ProxyPropertiesWithObserver.PropertySettings
 {
     public class PropertyProviderSettings
     {

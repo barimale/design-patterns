@@ -1,6 +1,6 @@
-﻿using Neurons.Abstraction;
+﻿using Composite.Abstraction;
 
-namespace Neurons
+namespace Composite
 {
     public class Neuron: Scalar<Neuron>
     {

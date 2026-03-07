@@ -1,8 +1,8 @@
-﻿namespace ProxyProperties.Properties.Abstraction
+﻿namespace ProxyProperties.PropertySettings.Abstraction
 {
     public class Property<T>
     {
-        private T? value;
+        private T value;
         private readonly string name;
         private static string _connectionString = string.Empty;
 

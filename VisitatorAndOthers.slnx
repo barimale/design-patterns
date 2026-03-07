@@ -7,6 +7,7 @@
     <Project Path="ChainOfResponsabilities/ChainOfResponsabilitiesAndFacade.csproj" Id="b2f1efa2-3205-4253-a0a7-4f2fcd6d020c" />
     <Project Path="Prototype/PrototypeAndBuildersAndCollectingParameter.csproj" Id="fa423196-f8c6-49f7-83f3-8bb52400c7cb" />
     <Project Path="ProxyProperties/ProxyProperties.csproj" Id="5c0054f0-67bf-43bb-b4b4-99990acaab33" />
+    <Project Path="ProxyPropertiesWithObserver/ProxyPropertiesWithObserver.csproj" />
     <Project Path="Singleton/Singleton.csproj" Id="4301d78d-a046-4e10-b012-338e9b415491" />
     <Project Path="Strategy/StrategyAndTemplateMethod.csproj" Id="26c2b1e8-ec23-4da7-9130-0aa85733aa53" />
     <Project Path="VisitatorAndOthers/Composite.csproj" />

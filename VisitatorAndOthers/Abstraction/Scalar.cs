@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace Neurons.Abstraction
+namespace Composite.Abstraction
 {
     public class Scalar<T> : IEnumerable<T> where T : Scalar<T>
     {

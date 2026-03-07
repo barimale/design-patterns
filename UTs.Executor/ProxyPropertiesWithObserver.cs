@@ -6,12 +6,12 @@ using PropertyProviderSettings = ProxyProperties.PropertySettings.PropertyProvid
 
 namespace UTs.Executor
 {
-    public class ProxyProperties : PrintToConsoleUTBase
+    public class ProxyPropertiesWithObserver : PrintToConsoleUTBase
     {
         private readonly TextWriter _originalOut;
         private readonly TestOutputTextWriter _redirectWriter;
 
-        public ProxyProperties(ITestOutputHelper output)
+        public ProxyPropertiesWithObserver(ITestOutputHelper output)
             : base(output)
         {
             _originalOut = Console.Out;

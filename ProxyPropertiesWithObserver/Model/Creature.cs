@@ -1,7 +1,7 @@
-﻿using ProxyProperties.PropertySettings;
-using ProxyProperties.PropertySettings.Abstraction;
+﻿using ProxyPropertiesWithObserver.PropertySettings;
+using ProxyPropertiesWithObserver.PropertySettings.Abstraction;
 
-namespace ProxyProperties.Model
+namespace ProxyPropertiesWithObserver.Model
 {
     public class Creature
     {

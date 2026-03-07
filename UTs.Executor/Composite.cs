@@ -1,4 +1,5 @@
-﻿using Neurons;
+﻿using Composite;
+using Neurons;
 using UTs.Executor.BaseUT;
 using Xunit.Abstractions;
 
