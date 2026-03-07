@@ -1,15 +1,14 @@
-﻿using Composite;
-using UTs.Executor.BaseUT;
+﻿using UTs.Executor.BaseUT;
 using Xunit.Abstractions;
 
 namespace UTs.Executor
 {
-    public class Composite : PrintToConsoleUTBase
+    public class PropertyObserver : PrintToConsoleUTBase
     {
         private readonly TextWriter _originalOut;
         private readonly TestOutputTextWriter _redirectWriter;
 
-        public Composite(ITestOutputHelper output)
+        public PropertyObserver(ITestOutputHelper output)
             : base(output)
         {
             _originalOut = Console.Out;
@@ -21,17 +20,21 @@ namespace UTs.Executor
         public void Execute()
         {
             // given
-            var neuron1 = new Neuron();
-            var neuron2 = new Neuron();
-            var layer1 = new NeuronLayer(3);
-            var layer2 = new NeuronLayer(4);
+            var subject = new Subject();
 
-            neuron1.ConnectTo(neuron2);
+            var obs1 = new ConsoleObserver("Observer A");
+            var obs2 = new ConsoleObserver("Observer B");
 
-            neuron2.ConnectTo(layer1);
-            layer1.ConnectTo(layer2);
+            subject.Attach(obs1);
+            subject.Attach(obs2);
 
             // when
+            subject.State = 10;
+            subject.State = 20;
+
+            subject.Detach(obs1);
+
+            subject.State = 30;
 
             // then
             Output.WriteLine("Execution completed. Check test output for details.");
