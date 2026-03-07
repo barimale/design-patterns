@@ -1,4 +1,6 @@
-﻿using ProxyProperties.Model;
+﻿using ProxyProperties;
+using ProxyProperties.Model;
+using ProxyProperties.Properties;
 using UTs.Executor.BaseUT;
 using Xunit.Abstractions;
 
@@ -21,11 +23,16 @@ namespace UTs.Executor
         public void Execute()
         {
             // given
-            var creature = new Creature();
-            creature.Agility = 10;
+            var settings = new PropertyProviderSettings
+            {
+                ConnectionString = "ORACLE DB CONNECTION STRING"
+            };
+            PropertyProvider.SetPropertyProviderSettings(settings);
 
             // when
+            var creature = new Creature();
             creature.Agility = 12;
+            creature.Inteligence = 15;
 
             // then
             Output.WriteLine("Execution completed. Check test output for details.");
