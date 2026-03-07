@@ -9,3 +9,4 @@ Implemented design patterns:
 - Builder
 - Composite
 - Factory method
+- Observer
