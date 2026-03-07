@@ -1,35 +1,37 @@
 ﻿using PropertyObserver.Abstraction;
-
-public class Subject
+namespace PropertyObserver
 {
-    private List<IObserver> observers = new List<IObserver>();
-    private int _state;
-
-    public int State
+    public class Subject
     {
-        get => _state;
-        set
+        private List<IObserver> observers = new List<IObserver>();
+        private int _state;
+
+        public int State
         {
-            _state = value;
-            NotifyObservers();
+            get => _state;
+            set
+            {
+                _state = value;
+                NotifyObservers();
+            }
         }
-    }
 
-    public void Attach(IObserver observer)
-    {
-        observers.Add(observer);
-    }
-
-    public void Detach(IObserver observer)
-    {
-        observers.Remove(observer);
-    }
-
-    private void NotifyObservers()
-    {
-        foreach (var observer in observers)
+        public void Attach(IObserver observer)
         {
-            observer.Update(_state);
+            observers.Add(observer);
+        }
+
+        public void Detach(IObserver observer)
+        {
+            observers.Remove(observer);
+        }
+
+        private void NotifyObservers()
+        {
+            foreach (var observer in observers)
+            {
+                observer.Update(_state);
+            }
         }
     }
 }

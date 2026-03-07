@@ -1,15 +1,15 @@
-﻿using PropertyObserver;
+﻿using EventObserver;
 using UTs.Executor.BaseUT;
 using Xunit.Abstractions;
 
 namespace UTs.Executor
 {
-    public class PropertyObserver : PrintToConsoleUTBase
+    public class EventObserver : PrintToConsoleUTBase
     {
         private readonly TextWriter _originalOut;
         private readonly TestOutputTextWriter _redirectWriter;
 
-        public PropertyObserver(ITestOutputHelper output)
+        public EventObserver(ITestOutputHelper output)
             : base(output)
         {
             _originalOut = Console.Out;
@@ -23,17 +23,15 @@ namespace UTs.Executor
             // given
             var subject = new Subject();
 
-            var obs1 = new ConsoleObserver("Observer A");
-            var obs2 = new ConsoleObserver("Observer B");
+            var obs1 = new ConsoleObserver("Observer A", subject);
+            var obs2 = new ConsoleObserver("Observer B", subject);
 
-            subject.Attach(obs1);
-            subject.Attach(obs2);
-
-            // when
             subject.State = 10;
             subject.State = 20;
 
-            subject.Detach(obs1);
+            // when
+            // Odsubskrybowanie
+            subject.StateChanged -= obs1.HandleStateChanged;
 
             subject.State = 30;
 

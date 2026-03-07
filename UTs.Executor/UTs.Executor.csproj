@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ChainOfResponsabilities\ChainOfResponsabilitiesAndFacade.csproj" />
+    <ProjectReference Include="..\EventObserver\EventObserver.csproj" />
     <ProjectReference Include="..\EventVisitator\EventVisitor.csproj" />
     <ProjectReference Include="..\PropertyObserver\PropertyObserver.csproj" />
     <ProjectReference Include="..\Prototype\PrototypeAndBuildersAndCollectingParameter.csproj" />
