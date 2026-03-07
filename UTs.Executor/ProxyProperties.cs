@@ -31,7 +31,7 @@ namespace UTs.Executor
             // when
             var creature = new Creature();
             creature.Agility = 12;
-            creature.Inteligence = 15;
+            creature.Inteligence = "15";
 
             // then
             Output.WriteLine("Execution completed. Check test output for details.");

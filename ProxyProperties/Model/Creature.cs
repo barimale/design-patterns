@@ -6,7 +6,7 @@ namespace ProxyProperties.Model
     public class Creature
     {
         public Property<int> agility = PropertyProvider.CreateProperty(0, "Agility");
-        public Property<int> inteligence = PropertyProvider.CreateProperty(0, "Inteligence");
+        public Property<string> inteligence = PropertyProvider.CreateProperty("empty", "Inteligence");
 
         public int Agility
         {
@@ -14,7 +14,7 @@ namespace ProxyProperties.Model
             set { agility.Value = value; }
         }
 
-        public int Inteligence
+        public string Inteligence
         {
             get { return inteligence.Value; }
             set { inteligence.Value = value; }

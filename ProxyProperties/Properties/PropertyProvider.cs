@@ -11,7 +11,6 @@ namespace ProxyProperties.Properties
         }
 
         public static Property<T> CreateProperty<T>(T initialValue, string name)
-            where T : new()
         {
             return new Property<T>(initialValue, _settings.ConnectionString, name);
         }

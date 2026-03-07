@@ -1,6 +1,6 @@
 ﻿namespace ProxyProperties.Properties.Abstraction
 {
-    public class Property<T> where T : new()
+    public class Property<T>
     {
         private T? value;
         private readonly string name;
@@ -11,14 +11,14 @@
             // intentionally left blank
         }
 
-        public Property(T? value, string connectionString, string name = "")
+        public Property(T value, string connectionString, string name = "")
         {
             this.name = name;
             this.Value = value;
             _connectionString = connectionString;
         }
 
-        public T? Value
+        public T Value
         {
             get
             {
@@ -33,14 +33,14 @@
             }
         }
 
-        public static implicit operator T?(Property<T?> property)
+        public static implicit operator T(Property<T> property)
         {
             return property.Value;
         }
 
-        public static implicit operator Property<T?>(T? value)
+        public static implicit operator Property<T>(T value)
         {
-            return new Property<T?>(value, _connectionString);
+            return new Property<T>(value, _connectionString);
         }
     }
 }
