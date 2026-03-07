@@ -1,5 +1,4 @@
-﻿using ProxyProperties;
-using ProxyProperties.Model;
+﻿using ProxyProperties.Model;
 using ProxyProperties.Properties;
 using UTs.Executor.BaseUT;
 using Xunit.Abstractions;
