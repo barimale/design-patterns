@@ -2,21 +2,21 @@
 {
     public class LoggerAdapter : INewLogger
     {
-        private readonly OldLogger _oldLogger;
+        private readonly OldLogger _adaptee;
 
         public LoggerAdapter(OldLogger oldLogger)
         {
-            _oldLogger = oldLogger;
+            _adaptee = oldLogger;
         }
 
         public void LogInfo(string message)
         {
-            _oldLogger.Write($"INFO: {message}");
+            _adaptee.Write($"INFO: {message}");
         }
 
         public void LogError(string message)
         {
-            _oldLogger.Write($"ERROR: {message}");
+            _adaptee.Write($"ERROR: {message}");
         }
     }
 
