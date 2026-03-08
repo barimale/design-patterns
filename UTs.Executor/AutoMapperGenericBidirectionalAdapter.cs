@@ -48,11 +48,18 @@ namespace UTs.Executor
                 dto.SecondFieldName = vm.FieldName;
             });
 
+            var newDtos = adapter.ToSourceCollection(vms, (dto, vm) =>
+            {
+                dto.UpdatedAt = vm.UpdatedAt;
+                dto.SecondFieldName = vm.FieldName;
+            });
+
             // then
             Assert.Equal(dtos.Count, vms.Count());
             Assert.Equal(dtos[0].DisplayName.ToUpper(), vms.FirstOrDefault()?.DisplayName);
             Assert.Equal(dtos[0].SecondFieldName, dto.SecondFieldName);
             Assert.Equal(vms.Select(p => p.FieldName), dtos.Select(pp => pp.SecondFieldName));
+            Assert.Equal(vms.Select(p => p.UpdatedAt), newDtos.Select(pp => pp.UpdatedAt));
             Output.WriteLine("Execution completed. Check test output for details.");
         }
     }
