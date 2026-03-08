@@ -19,7 +19,7 @@
     <Project Path="EventObserver/EventObserver.csproj" Id="4577f566-24c0-44ad-bff4-bd4450cd37e8" />
     <Project Path="PropertyObserver/PropertyObserver.csproj" Id="7f6886aa-37bd-48a3-a843-0d1d7a1ae160" />
   </Folder>
-  <Folder Name="/Design Patterns/Proxy/">
+  <Folder Name="/Design Patterns/Proxies/">
     <Project Path="ProxyProperties/ProxyProperties.csproj" Id="5c0054f0-67bf-43bb-b4b4-99990acaab33" />
     <Project Path="ProxyPropertiesWithObserver/ProxyPropertiesWithObserver.csproj" />
   </Folder>
