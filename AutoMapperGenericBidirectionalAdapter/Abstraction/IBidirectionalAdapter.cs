@@ -4,22 +4,19 @@
     {
         TTarget ToTarget(
             TSource source,
-            Action<TTarget>? custom = null);
+            Action<TSource, TTarget>? custom = null);
 
         TSource ToSource(
             TTarget target,
-            Action<TSource>? custom = null);
+            Action<TSource, TTarget>? custom = null);
 
         IEnumerable<TTarget> ToTargetCollection(
             IEnumerable<TSource> source,
-            Action<TTarget>? custom = null);
+            Action<TSource, TTarget>? custom = null);
 
         IEnumerable<TSource> ToSourceCollection(
             IEnumerable<TTarget> target,
-            Action<TSource>? custom = null);
-
-        IQueryable<TTarget> ToTargetQueryable(IQueryable<TSource> source);
-        IQueryable<TSource> ToSourceQueryable(IQueryable<TTarget> target);
+            Action<TSource, TTarget>? custom = null);
     }
 
 }

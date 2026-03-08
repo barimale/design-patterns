@@ -17,45 +17,39 @@ namespace AutoMapperGenericBidirectionalAdapter
             _config = mapper.ConfigurationProvider;
         }
 
-        public TTarget ToTarget(TSource source, Action<TTarget>? custom = null)
+        public TTarget ToTarget(TSource source, Action<TSource,TTarget>? custom = null)
         {
             var result = _mapper.Map<TTarget>(source);
-            custom?.Invoke(result);
+            custom?.Invoke(source, result);
             return result;
         }
 
-        public TSource ToSource(TTarget target, Action<TSource>? custom = null)
+        public TSource ToSource(TTarget target, Action<TSource, TTarget>? custom = null)
         {
             var result = _mapper.Map<TSource>(target);
-            custom?.Invoke(result);
+            custom?.Invoke(result, target);
             return result;
         }
 
-        public IEnumerable<TTarget> ToTargetCollection(IEnumerable<TSource> source, Action<TTarget>? custom = null)
+        public IEnumerable<TTarget> ToTargetCollection(IEnumerable<TSource> source, Action<TSource,TTarget>? custom = null)
         {
             foreach (var item in source)
             {
                 var mapped = _mapper.Map<TTarget>(item);
-                custom?.Invoke(mapped);
+                custom?.Invoke(item, mapped);
                 yield return mapped;
             }
         }
 
-        public IEnumerable<TSource> ToSourceCollection(IEnumerable<TTarget> target, Action<TSource>? custom = null)
+        public IEnumerable<TSource> ToSourceCollection(IEnumerable<TTarget> target, Action<TSource, TTarget>? custom = null)
         {
             foreach (var item in target)
             {
                 var mapped = _mapper.Map<TSource>(item);
-                custom?.Invoke(mapped);
+                custom?.Invoke(mapped, item);
                 yield return mapped;
             }
         }
-
-        public IQueryable<TTarget> ToTargetQueryable(IQueryable<TSource> source)
-            => source.ProjectTo<TTarget>(_config);
-
-        public IQueryable<TSource> ToSourceQueryable(IQueryable<TTarget> target)
-            => target.ProjectTo<TSource>(_config);
     }
 
 }
