@@ -22,10 +22,11 @@ namespace UTs.Executor
         public void Execute()
         {
             // given
+            var connectionString = "Data Source=MyDatabase;Initial Catalog=MyCatalog;Integrated Security=True;";
             var creature = new Creature();
-            var obs1 = new ConsoleObserver<int>("Observer A", creature.agility);
-            var obs2 = new ConsoleObserver<int>("Observer B", creature.agility);
-            var obs3 = new ConsoleObserver<string>("Observer C", creature.inteligence);
+            var obs1 = new ConsoleObserver<int>("Observer A", connectionString, creature.agility);
+            var obs2 = new ConsoleObserver<int>("Observer B", connectionString, creature.agility);
+            var obs3 = new ConsoleObserver<string>("Observer C", connectionString, creature.inteligence);
 
             // when
             creature.Agility = 12;
