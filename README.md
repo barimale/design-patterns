@@ -1,4 +1,4 @@
-Implemented design patterns:
+Implemented design patterns with combinations:
 - Visitor
 - Proxy
 - Prototype
