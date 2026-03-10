@@ -12,3 +12,4 @@ Implemented design patterns:
 - Observer
 - Flyweight
 - Adapter
+- Facade
