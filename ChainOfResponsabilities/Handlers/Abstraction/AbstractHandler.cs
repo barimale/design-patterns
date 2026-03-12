@@ -22,11 +22,11 @@ namespace ChainOfResponsabilitiesAndFacade.Handlers.Abstraction
         /// <summary>
         /// Handles the file models input. If the current handler cannot handle the input, it passes it to the next handler in the chain.
         /// </summary>
-        /// <param name="files">The file models input.</param>
+        /// <param name="input">The models input.</param>
         /// <returns>A task that represents the asynchronous operation.</returns>
-        public virtual Task<object> Handle(DummyInput files) {
+        public virtual Task<object> Handle(DummyInput input) {
             if (_nextHandler != null) {
-                return _nextHandler.Handle(files);
+                return _nextHandler.Handle(input);
             } else {
                 return Task.FromResult<object>(null);
             }
