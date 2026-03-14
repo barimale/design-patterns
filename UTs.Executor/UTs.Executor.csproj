@@ -20,6 +20,7 @@
     <ProjectReference Include="..\AutoMapperGenericBidirectionalAdapter\AutoMapperGenericBidirectionalAdapter.csproj" />
     <ProjectReference Include="..\Bridge\Bridge.csproj" />
     <ProjectReference Include="..\ChainOfResponsabilities\ChainOfResponsabilitiesAndFacade.csproj" />
+    <ProjectReference Include="..\Command\Command.csproj" />
     <ProjectReference Include="..\Decorator\Decorator.csproj" />
     <ProjectReference Include="..\EventObserver\EventObserver.csproj" />
     <ProjectReference Include="..\EventVisitator\EventVisitor.csproj" />

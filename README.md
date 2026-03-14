@@ -19,9 +19,9 @@ Implemented design patterns:
 - Abstract factory
 - Bridge 
 - Decorator
+- Command
 
 TODOs:
-- Command
 - Mediator
 - Interpreter
 - Iterator
