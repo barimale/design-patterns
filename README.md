@@ -17,9 +17,9 @@ Implemented design patterns:
 - Memento
 - Chain	of responsibility
 - Abstract factory
+- Bridge 
 
 TODOs:
-- Bridge 
 - Decorator
 - Command
 - Mediator
