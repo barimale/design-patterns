@@ -21,7 +21,7 @@ Implemented design patterns:
 - Decorator
 - Command
 - Interpreter
+- Iterator
 
 TODOs:
 - Mediator
-- Iterator
