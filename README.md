@@ -18,9 +18,9 @@ Implemented design patterns:
 - Chain	of responsibility
 - Abstract factory
 - Bridge 
+- Decorator
 
 TODOs:
-- Decorator
 - Command
 - Mediator
 - Interpreter
