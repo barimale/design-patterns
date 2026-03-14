@@ -1,5 +1,4 @@
-﻿using Composite;
-using Memento.Model;
+﻿using Memento.Model;
 using UTs.Executor.BaseUT;
 using Xunit.Abstractions;
 
