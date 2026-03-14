@@ -14,3 +14,4 @@ Implemented design patterns:
 - Adapter
 - Facade
 - State
+- Memento
