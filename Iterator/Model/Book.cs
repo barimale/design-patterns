@@ -1,4 +1,4 @@
-﻿namespace Iterator
+﻿namespace Iterator.Model
 {
     public class Book
     {

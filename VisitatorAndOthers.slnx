@@ -11,6 +11,7 @@
     <Project Path="FlyweightLazyLoading/FlyweightLazyLoading.csproj" Id="7a7fa84e-b2ac-47ed-8561-b06519562327" />
     <Project Path="Interpreter/Interpreter.csproj" Id="5e1e966f-d581-437c-8f35-57526fc6c753" />
     <Project Path="Iterator/Iterator.csproj" Id="b7e009df-07fe-49fe-80a5-bdf758c16264" />
+    <Project Path="Mediator/Mediator.csproj" Id="6da11143-0f66-476a-a864-97dbd719de93" />
     <Project Path="Memento/Memento.csproj" Id="fbd71f47-3348-419e-b6f2-a8fde0af47ab" />
     <Project Path="Prototype/PrototypeAndBuildersAndCollectingParameter.csproj" Id="fa423196-f8c6-49f7-83f3-8bb52400c7cb" />
     <Project Path="Singleton/Singleton.csproj" Id="4301d78d-a046-4e10-b012-338e9b415491" />

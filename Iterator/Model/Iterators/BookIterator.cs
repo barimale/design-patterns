@@ -1,4 +1,6 @@
-﻿namespace Iterator
+﻿using Iterator.Model;
+
+namespace Iterator.Model.Iterators
 {
     public class BookIterator : IIterator<Book>
     {

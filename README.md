@@ -22,6 +22,4 @@ Implemented design patterns:
 - Command
 - Interpreter
 - Iterator
-
-TODOs:
 - Mediator

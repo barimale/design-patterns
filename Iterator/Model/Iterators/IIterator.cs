@@ -1,4 +1,4 @@
-﻿namespace Iterator
+﻿namespace Iterator.Model.Iterators
 {
     public interface IIterator<T>
     {
