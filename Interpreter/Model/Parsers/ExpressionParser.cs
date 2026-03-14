@@ -22,6 +22,14 @@ namespace Interpreter.Model.Parsers
                 {
                     expression = new SubtractExpression(expression, new NumberExpression(number));
                 }
+                else if (op == "*")
+                {
+                    expression = new MultiplyExpression(expression, new NumberExpression(number));
+                }
+                else if (op == "/")
+                {
+                    expression = new DevideExpression(expression, new NumberExpression(number));
+                }
             }
 
             return expression;

@@ -25,7 +25,7 @@ namespace UTs.Executor
             var parser = new ExpressionParser();
 
             // when
-            string input = "1 + 2 - 300";
+            string input = "1 + 2 * 10 / 2 - 300";
             var expression = parser.Parse(input);
             int result = expression.Interpret();
 
