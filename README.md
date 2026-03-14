@@ -15,3 +15,13 @@ Implemented design patterns:
 - Facade
 - State
 - Memento
+- Chain	of responsibility
+- Abstract factory
+
+TODOs:
+- Bridge 
+- Decorator
+- Command
+- Mediator
+- Interpreter
+- Iterator
