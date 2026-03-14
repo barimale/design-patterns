@@ -25,6 +25,7 @@
     <ProjectReference Include="..\EventObserver\EventObserver.csproj" />
     <ProjectReference Include="..\EventVisitator\EventVisitor.csproj" />
     <ProjectReference Include="..\FlyweightLazyLoading\FlyweightLazyLoading.csproj" />
+    <ProjectReference Include="..\Interpreter\Interpreter.csproj" />
     <ProjectReference Include="..\Memento\Memento.csproj" />
     <ProjectReference Include="..\PropertyObserver\PropertyObserver.csproj" />
     <ProjectReference Include="..\Prototype\PrototypeAndBuildersAndCollectingParameter.csproj" />
