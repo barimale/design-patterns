@@ -20,8 +20,8 @@ Implemented design patterns:
 - Bridge 
 - Decorator
 - Command
+- Interpreter
 
 TODOs:
 - Mediator
-- Interpreter
 - Iterator
