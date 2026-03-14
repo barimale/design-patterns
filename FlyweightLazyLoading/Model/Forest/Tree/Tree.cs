@@ -1,4 +1,4 @@
-﻿namespace FlyweightLazyLoading.Model.Trees
+﻿namespace FlyweightLazyLoading.Model.Forest.Tree
 {
     public class Tree
     {

@@ -1,4 +1,4 @@
-﻿namespace Adapter
+﻿namespace Adapter.Model
 {
     public class OldLogger
     {

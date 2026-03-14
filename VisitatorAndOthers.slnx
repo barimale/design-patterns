@@ -8,6 +8,7 @@
     <Project Path="FlyweightLazyLoading/FlyweightLazyLoading.csproj" Id="7a7fa84e-b2ac-47ed-8561-b06519562327" />
     <Project Path="Prototype/PrototypeAndBuildersAndCollectingParameter.csproj" Id="fa423196-f8c6-49f7-83f3-8bb52400c7cb" />
     <Project Path="Singleton/Singleton.csproj" Id="4301d78d-a046-4e10-b012-338e9b415491" />
+    <Project Path="State/State.csproj" Id="f1f476bd-3a0e-485a-8c10-8b9ec9cfd72a" />
     <Project Path="Strategy/StrategyAndTemplateMethod.csproj" Id="26c2b1e8-ec23-4da7-9130-0aa85733aa53" />
     <Project Path="VisitatorAndOthers/Composite.csproj" />
   </Folder>

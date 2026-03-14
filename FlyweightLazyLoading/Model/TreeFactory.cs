@@ -1,4 +1,4 @@
-﻿using FlyweightLazyLoading.Model.Trees;
+﻿using FlyweightLazyLoading.Model.Forest.Tree;
 
 namespace FlyweightLazyLoading.Model
 {

@@ -13,3 +13,4 @@ Implemented design patterns:
 - Flyweight
 - Adapter
 - Facade
+- State

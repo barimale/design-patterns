@@ -1,15 +1,18 @@
-﻿using Adapter.Model;
+﻿using Composite;
+using State;
+using State.Model.Context;
+using State.Model.States;
 using UTs.Executor.BaseUT;
 using Xunit.Abstractions;
 
 namespace UTs.Executor
 {
-    public class Adapter : PrintToConsoleUTBase
+    public class State : PrintToConsoleUTBase
     {
         private readonly TextWriter _originalOut;
         private readonly TestOutputTextWriter _redirectWriter;
 
-        public Adapter(ITestOutputHelper output)
+        public State(ITestOutputHelper output)
             : base(output)
         {
             _originalOut = Console.Out;
@@ -21,12 +24,12 @@ namespace UTs.Executor
         public void Execute()
         {
             // given
-            OldLogger oldLogger = new OldLogger();
-            INewLogger logger = new LoggerAdapter(oldLogger);
+            var player = new PlayerContext(new PausedState());
+
+            player.Play();   // Resuming playback...
+            player.Pause();  // Pausing...
 
             // when
-            logger.LogInfo("System działa poprawnie");
-            logger.LogError("Wystąpił błąd");
 
             // then
             Output.WriteLine("Execution completed. Check test output for details.");
