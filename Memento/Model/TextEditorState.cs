@@ -9,9 +9,6 @@
             Text = text;
         }
 
-        public static TextEditorState Empty()
-        {
-            return new TextEditorState(string.Empty);
-        }
+        public static TextEditorState Empty => new TextEditorState(string.Empty);
     }
 }

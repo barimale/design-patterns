@@ -2,7 +2,7 @@
 {
     public class TextEditor
     {
-        public TextEditorState Text { get; private set; } = TextEditorState.Empty();
+        public TextEditorState Text { get; private set; } = TextEditorState.Empty;
 
         public void Type(string newText)
         {
