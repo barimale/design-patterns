@@ -2,9 +2,9 @@
 {
     public class Memento
     {
-        public string State { get; }
+        public TextEditorState State { get; }
 
-        public Memento(string state)
+        public Memento(TextEditorState state)
         {
             State = state;
         }

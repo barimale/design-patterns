@@ -31,13 +31,13 @@ namespace UTs.Executor
             editor.Type("World!");
             history.Backup(editor.Save());
 
-            Output.WriteLine(editor.Text); // Hello World!
+            Output.WriteLine(editor.Text.Text); // Hello World!
 
             editor.Restore(history.Undo());
-            Output.WriteLine(editor.Text); // Hello 
+            Output.WriteLine(editor.Text.Text); // Hello 
 
             editor.Restore(history.Undo());
-            Output.WriteLine(editor.Text); // (pusty)
+            Output.WriteLine(editor.Text.Text); // (pusty)
 
             // then
             Output.WriteLine("Execution completed. Check test output for details.");

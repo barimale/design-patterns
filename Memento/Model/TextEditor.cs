@@ -2,11 +2,11 @@
 {
     public class TextEditor
     {
-        public string Text { get; private set; } = "";
+        public TextEditorState Text { get; private set; } = TextEditorState.Empty();
 
         public void Type(string newText)
         {
-            Text += newText;
+            Text.Text += newText;
         }
 
         public Memento Save()
